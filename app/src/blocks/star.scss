@@ -1,0 +1,21 @@
+$name: star;
+
+.#{$name} {
+	width: 5rem;
+	height: 5rem;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 4rem;
+	color: $color-gray;
+
+	&::after {
+		content: '\f005';
+		font-family: $font-fa;
+		line-height: 1;
+	}
+
+	&_enabled {
+		color: $color-main;
+	}
+}
