@@ -85,7 +85,7 @@ a {
 
 	&:not([class]),
 	&[class=''] {
-		transition: $duration / 2 ease;
+		@extend %transition;
 		color: $color-main;
 		border-bottom: 1px solid $color-main;
 
