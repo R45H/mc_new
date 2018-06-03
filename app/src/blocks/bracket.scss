@@ -1,0 +1,38 @@
+$name: bracket;
+
+.#{$name} {
+	position: relative;
+	display: inline-block;
+	color: white;
+
+	&__text {
+		display: block;
+		margin: .2em;
+		line-height: 1.1;
+	}
+
+	&::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-image: url($path + 'img/bracket-left.svg'), url($path + 'img/bracket-right.svg');
+		background-repeat: no-repeat, no-repeat;
+		background-size: contain, contain;
+		background-position: left, right;
+		pointer-events: none;
+	}
+
+	&_wide {
+
+		.#{$name} {
+			// =====
+
+			&__text {
+				padding: 0 1em;
+			}
+		}
+	}
+}
