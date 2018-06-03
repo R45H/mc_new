@@ -1,0 +1,10 @@
+$name: logo;
+
+.#{$name} {
+	display: inline-block;
+
+	&__img {
+		display: block;
+		height: 8rem;
+	}
+}
