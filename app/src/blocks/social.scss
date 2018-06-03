@@ -1,0 +1,62 @@
+$name: social;
+
+.#{$name} {
+	display: inline-block;
+
+	&__link {
+		@extend %transition;
+		color: black;
+		width: 6rem;
+		height: 4rem;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+
+		&::after {
+			content: '';
+			position: absolute;
+			top: 35%;
+			height: 30%;
+			right: 0;
+			width: 1px;
+			background: black;
+		}
+
+		&:last-child {
+
+			&::after {
+				display: none;
+			}
+		}
+
+		&:hover {
+			color: $color-main;
+		}
+
+		&_vk {
+
+			&:hover {
+				color: $color-vk;
+			}
+		}
+
+		&_youtube {
+
+			&:hover {
+				color: $color-yt;
+			}
+		}
+
+		&_instagram {
+
+			&:hover {
+				color: $color-insta;
+			}
+		}
+	}
+
+	&__icon {
+
+	}
+}
