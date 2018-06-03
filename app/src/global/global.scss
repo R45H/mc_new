@@ -87,16 +87,14 @@ a {
 	&[class=''] {
 		@extend %transition;
 		color: $color-main;
-		border-bottom: 1px solid $color-main;
+		border-bottom: 1px solid;
 
 		&:hover {
 			color: lighten($color-main, 10%);
-			border-bottom: 1px solid lighten($color-main, 10%);
 		}
 
 		&:active {
 			color: darken($color-main, 10%);
-			border-bottom: 1px solid darken($color-main, 10%);
 		}
 	}
 }

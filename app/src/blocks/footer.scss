@@ -1,5 +1,54 @@
 $name: footer;
 
 .#{$name} {
+	flex: 0 0 auto;
+	background: $color-main;
+	padding: 3rem 0;
 
+	@include screen-sm() {
+		position: relative;
+		padding-left: 10rem;
+		padding-right: 10rem;
+	}
+
+	&__wrap {
+		text-align: center;
+		color: white;
+	}
+
+	&__text {
+		font-size: 2.4rem;
+		margin-bottom: 1rem;
+	}
+
+	&__licence {
+
+	}
+
+	&__link {
+		font-size: 1.8rem;
+		color: white;
+
+		&:hover {
+			color: white;
+			border-color: transparent;
+		}
+
+		&:active {
+			color: white;
+			border-color: currentColor;
+		}
+	}
+
+	&__up {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+
+		@include screen-sm() {
+			position: absolute;
+			height: 100%;
+			width: 10rem;
+		}
+	}
 }

@@ -1,0 +1,20 @@
+$name: up;
+
+.#{$name} {
+	@extend %transition;
+	height: 7rem;
+	width: 7rem;
+	border: none;
+	outline: none;
+	border-radius: 0;
+	background: $color-light url($path + 'img/icons/up.svg') no-repeat center / 50%;
+	cursor: pointer;
+
+	&:hover {
+		background-color: lighten($color-light, 5%);
+	}
+
+	&:active {
+		background-color: darken($color-light, 5%);
+	}
+}
