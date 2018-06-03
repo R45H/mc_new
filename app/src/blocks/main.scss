@@ -2,4 +2,21 @@ $name: main;
 
 .#{$name} {
 
+	&__separator {
+		margin-bottom: 30px;
+		padding-bottom: 30px;
+		border-bottom: 1px solid $color-text;
+
+		&:first-child {
+			margin-top: 30px;
+		}
+	}
+
+	&__space-col {
+		margin-bottom: 30px;
+	}
+
+	&__black {
+		background: black;
+	}
 }

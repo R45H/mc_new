@@ -1,0 +1,44 @@
+$name: title;
+
+.#{$name} {
+	font-size: 3.7rem;
+	color: black;
+	text-transform: uppercase;
+
+	&_lower {
+		text-transform: none;
+	}
+
+	&_color_white {
+		color: white;
+	}
+
+	&_color_main {
+		color: $color-main;
+	}
+
+	&_color_light {
+		color: $color-light;
+	}
+
+	&_tight {
+		font-family: $font-second;
+		font-weight: bold;
+	}
+
+	&_xs {
+		font-size: 2.4rem;
+	}
+
+	&_sm {
+		font-size: 3.2rem;
+	}
+
+	&_lg {
+		font-size: 5.6rem;
+	}
+
+	&_xl {
+		font-size: 7.4rem;
+	}
+}
