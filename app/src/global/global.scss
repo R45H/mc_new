@@ -1,0 +1,106 @@
+html {
+	height: 100%;
+	font-size: 6px;
+
+	@include screen-sm() {
+		font-size: 7px;
+	}
+
+	@include screen-md() {
+		font-size: 8px;
+	}
+
+	@include screen-lg() {
+		font-size: 9px;
+	}
+
+	@include screen-xl() {
+		font-size: 10px;
+	}
+}
+
+body {
+	height: 100%;
+	font-size: 2.2rem;
+	font-family: $font-main;
+	color: $color-text;
+	line-height: 1.4;
+
+	&.noscroll {
+		overflow: hidden;
+	}
+}
+
+input,
+textarea {
+	// appearance: none;
+	// border-radius: 0;
+
+	&:hover,
+	&:focus,
+	&:active {
+		outline: none;
+	}
+}
+
+textarea {
+	resize: none;
+}
+
+hr {
+	margin: 0;
+}
+
+img,
+svg {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+::selection {
+	color: white;
+	background: $color-main;
+}
+
+ol,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	margin: 1em 0;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+
+	&:not([class]),
+	&[class=''] {
+		transition: $duration / 2 ease;
+		color: $color-main;
+		border-bottom: 1px solid $color-main;
+
+		&:hover {
+			color: lighten($color-main, 10%);
+			border-bottom: 1px solid lighten($color-main, 10%);
+		}
+
+		&:active {
+			color: darken($color-main, 10%);
+			border-bottom: 1px solid darken($color-main, 10%);
+		}
+	}
+}
+
+hr {
+	margin: 0;
+}

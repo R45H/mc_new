@@ -1,0 +1,63 @@
+@font-face {
+	font-family: 'FontAwesome';
+	src: url($path + 'fonts/fontawesome/fontawesome-webfont.eot?v=4.7.0');
+	src: url($path + 'fonts/fontawesome/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'),
+		url($path + 'fonts/fontawesome/fontawesome-webfont.woff2?v=4.7.0') format('woff2'),
+		url($path + 'fonts/fontawesome/fontawesome-webfont.woff?v=4.7.0') format('woff'),
+		url($path + 'fonts/fontawesome/fontawesome-webfont.ttf?v=4.7.0') format('truetype'),
+		url($path + 'fonts/fontawesome/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Akrobat */
+@font-face {
+	font-family: 'Akrobat';
+	src: url($path + 'fonts/Akrobat/akrobat-regular.woff2') format('woff2'),
+		url($path + 'fonts/Akrobat/akrobat-regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Akrobat';
+	src: url($path + 'fonts/Akrobat/akrobat-semibold.woff2') format('woff2'),
+		url($path + 'fonts/Akrobat/akrobat-semibold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+/* ===== */
+
+/* Geometria */
+@font-face {
+	font-family: 'Geometria';
+	src: url($path + 'fonts/Geometria/geometria-bold.woff2') format('woff2'),
+		url($path + 'fonts/Geometria/geometria-bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Geometria';
+	src: url($path + 'fonts/Geometria/geometria-bolditalic.woff2') format('woff2'),
+		url($path + 'fonts/Geometria/geometria-bolditalic.woff') format('woff');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Geometria';
+	src: url($path + 'fonts/Geometria/geometria-medium.woff2') format('woff2'),
+		url($path + 'fonts/Geometria/geometria-medium.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Geometria';
+	src: url($path + 'fonts/Geometria/geometria-mediumitalic.woff2') format('woff2'),
+		url($path + 'fonts/Geometria/geometria-mediumitalic.woff') format('woff');
+	font-weight: normal;
+	font-style: italic;
+}
+/* ===== */
