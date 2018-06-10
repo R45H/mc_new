@@ -1,6 +1,7 @@
 $name: main;
 
 .#{$name} {
+	flex: 1 0 auto;
 
 	&__separator {
 		margin-bottom: 30px;
