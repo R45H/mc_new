@@ -14,8 +14,9 @@ $name: btn;
 	text-align: center;
 	cursor: pointer;
 	line-height: 1.2;
+	box-shadow: 0 1.3rem 0 rgba(black, .1);
 	outline: none;
-	padding: 1.3em .9em;
+	padding: 1.3em;
 	word-break: break-word;
 
 	&:hover {
