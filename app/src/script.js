@@ -5,6 +5,9 @@ $(function() {
 	(function() {
 		//=require 'blocks/up/up.js'
 	}());
+	(function() {
+		//=require 'blocks/input/input.js'
+	}());
 	/* Blocks will be inserted here */
 });
 

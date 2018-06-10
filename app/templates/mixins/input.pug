@@ -1,0 +1,12 @@
+mixin input(options)
+	- var tag = options.textarea ? 'textarea' : 'input';
+
+	label.input(class= attributes.class)
+
+		if tag === 'input'
+			input.input__item(type= options.type || 'text')
+
+		if tag === 'textarea'
+			textarea.input__item
+
+		span.input__title= options.title

@@ -1,0 +1,63 @@
+$name: input;
+
+.#{$name} {
+	display: block;
+	width: 100%;
+	position: relative;
+	font-size: 2.2rem;
+	color: $color-text;
+
+	&__title {
+		line-height: 1.4;
+		font-style: italic;
+		position: absolute;
+		top: .3em;
+		left: 0;
+		cursor: text;
+		font-weight: normal;
+		transition: $duration / 2 ease;
+		user-select: none;
+		pointer-events: none;
+	}
+
+	&__item {
+		display: block;
+		width: 100%;
+		min-height: 100%;
+		line-height: 1.4;
+		appearance: none;
+		border-radius: 0;
+		border: none;
+		border-bottom: 1px solid $color-darkgray;
+		padding: .3em 0;
+		background: transparent;
+		font-family: $font-main;
+		font-weight: 300;
+		color: $color-text;
+		outline: none;
+
+		@include input-autofill($color-text, $color-text, white);
+
+		&textarea {
+			height: 4.5em;
+		}
+	}
+
+	&_invalid {
+		color: $color-main;
+
+		.#{$name} {
+			// =====
+
+			&__item {
+				border-color: $color-main;
+				color: $color-main;
+			}
+		}
+	}
+
+	&_focus &__title {
+		top: -1.6em;
+		font-size: 1.4rem;
+	}
+}

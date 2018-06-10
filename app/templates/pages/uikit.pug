@@ -1,3 +1,4 @@
+include ../mixins/input
 include ../components/logo
 include ../components/social
 
@@ -89,3 +90,21 @@ include ../components/social
 
 		.col-sm-1
 			.star.star_enabled
+
+	.row.main__separator
+
+		.col-sm-3
+			+input({
+				title: '.input'
+			})
+
+		.col-sm-3
+			+input({
+				title: '.input.input_invalid'
+			})(class='input_invalid')
+
+		.col-sm-3
+			+input({
+				title: 'textarea.input',
+				textarea: true
+			})
