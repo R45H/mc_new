@@ -11,6 +11,9 @@ $(function() {
 	(function() {
 		//=require 'blocks/header/header.js'
 	}());
+	(function() {
+		//=require 'blocks/modal/modal.js'
+	}());
 	/* Blocks will be inserted here */
 });
 

@@ -1,0 +1,30 @@
+include ../mixins/input
+
+// MODAL
+#modal.modal
+	.modal__wrap
+
+		.modal__head
+			h2.title Более 30 видео упражнений уже ждут тебя
+			button.modal__close(data-modal-close)
+
+		.modal__body
+			.row
+				.col-sm-8.offset-sm-2
+					.main__space-bot Введи свое имя и e-mail и ты получишь полный доступ к закрытому видео разделу проекта абсолютно бесплатно!
+
+				.col-sm-8.offset-sm-2.col-md-6.offset-md-3
+					.main__space-bot
+						+input({
+							title: 'Имя'
+						})
+					.main__space-bot
+						+input({
+							title: 'E-mail',
+							type: 'email'
+						})
+					.main__space-bot
+						input.btn.btn_wide(type='submit' value='Получить')
+
+				.col-12
+					.modal__info Никакого спама! Если тебе что-то не понравится, ты сможешь отписаться в любой момент.

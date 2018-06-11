@@ -26,4 +26,13 @@ $name: btn;
 	&:active {
 		background-color: darken($color-main, 10%);
 	}
+
+	&:focus {
+		outline: 1px solid darken($color-main, 10%);
+	}
+
+	&_wide {
+		padding-left: 2.6em;
+		padding-right: 2.6em;
+	}
 }
