@@ -25,6 +25,45 @@ $name: section;
 		}
 	}
 
+	&__next {
+		@extend %transition;
+		position: absolute;
+		bottom: -5.5rem;
+		right: 50%;
+		transform: translateX(50%);
+		width: 8rem;
+		height: 8rem;
+		background: $color-main;
+		color: white;
+		font-size: 7rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+		overflow: hidden;
+		z-index: 10;
+
+		@include screen-sm() {
+			bottom: -4rem;
+			transform: none;
+			right: 10%;
+		}
+
+		&::after {
+			content: '\f107';
+			font-family: $font-fa;
+			line-height: 1;
+		}
+
+		&:hover {
+			background-color: lighten($color-main, 10%);
+		}
+
+		&:active {
+			background-color: darken($color-main, 10%);
+		}
+	}
+
 	&_full {
 		min-height: 100vh;
 	}

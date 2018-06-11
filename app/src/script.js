@@ -14,6 +14,9 @@ $(function() {
 	(function() {
 		//=require 'blocks/modal/modal.js'
 	}());
+	(function() {
+		//=require 'blocks/section/section.js'
+	}());
 	/* Blocks will be inserted here */
 });
 
