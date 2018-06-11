@@ -38,6 +38,13 @@ $name: modal;
 			height: auto;
 		}
 
+		&_row {
+
+			@include screen-sm() {
+				flex-direction: row;
+			}
+		}
+
 		&_visible {
 			transition: $duration * 2 ease transform, $duration linear opacity;
 			transform: none;
@@ -115,9 +122,57 @@ $name: modal;
 		}
 	}
 
+	&__col {
+
+		@include screen-sm() {
+			width: 50%;
+		}
+
+		&_first {
+			background: url($path + 'img/content/modal.jpg') no-repeat center / cover;
+			padding-bottom: 100%;
+			filter: grayscale(1);
+
+			@include screen-sm() {
+				padding-bottom: 50%;
+				order: 1;
+			}
+		}
+
+		&_second {
+			background: $color-main;
+			flex-grow: 1;
+
+			@include screen-sm() {
+				display: flex;
+				align-items: center;
+			}
+		}
+	}
+
+	&__col-i {
+		padding: 4rem;
+		width: 100%;
+	}
+
 	&__info {
 		font-weight: 300;
 		font-style: italic;
+	}
+
+	&__list {
+		color: white;
+		font-family: $font-second;
+		counter-reset: list 0;
+	}
+
+	&__list-item {
+		list-style-type: none;
+
+		&::before {
+			counter-increment: list;
+			content: counter(list) '. ';
+		}
 	}
 
 	&_visible {

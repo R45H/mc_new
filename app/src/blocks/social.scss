@@ -2,6 +2,7 @@ $name: social;
 
 .#{$name} {
 	display: inline-block;
+	font-size: 2.6rem;
 
 	&__link {
 		@extend %transition;
@@ -31,7 +32,7 @@ $name: social;
 		}
 
 		&:hover {
-			color: $color-main;
+			color: $color-light;
 		}
 
 		&_vk {

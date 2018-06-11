@@ -1,0 +1,13 @@
+$name: info;
+
+.#{$name} {
+	display: block;
+	border: 2px solid black;
+	box-shadow: 0 1.3rem 0 rgba(black, .1);
+	text-transform: uppercase;
+	font-family: $font-second;
+	color: black;
+	padding: 1rem 3rem;
+	font-weight: bold;
+	text-align: center;
+}

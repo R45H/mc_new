@@ -1,0 +1,43 @@
+$name: dots;
+
+.#{$name} {
+	display: inline-flex;
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 15px;
+		margin-right: 10px;
+
+		&::before,
+		&::after {
+			content: '';
+			background: rgba(255, 255, 255, .5);
+			border-radius: 50%;
+			width: 4px;
+			height: 4px;
+		}
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	&_big {
+
+		.#{$name} {
+			// =====
+
+			&__item {
+				height: 20px;
+
+				&::before,
+				&::after {
+					width: 6px;
+					height: 6px;
+				}
+			}
+		}
+	}
+}

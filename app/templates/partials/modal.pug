@@ -1,4 +1,6 @@
 include ../mixins/input
+include ../mixins/dots
+include ../components/social
 
 // MODAL
 #modal.modal
@@ -28,3 +30,24 @@ include ../mixins/input
 
 				.col-12
 					.modal__info Никакого спама! Если тебе что-то не понравится, ты сможешь отписаться в любой момент.
+
+#modal2.modal
+	.modal__wrap.modal__wrap_row
+
+		.modal__col.modal__col_first
+
+		.modal__col.modal__col_second
+			.modal__col-i
+				.main__space-bot.text-right
+					+dots(7)
+				.main__space-bot
+					.info Отправь мне сообщение в «вконтакте» или на почту с темой: «бесплатная консультация» и укажи:
+				.main__space-bot
+					ol.modal__list
+						li.modal__list-item Имя и Фамилию
+						li.modal__list-item Возраст
+						li.modal__list-item Город
+						li.modal__list-item В 4-5 предложениях опиши свою главную проблему, которую ты хотел бы решить.
+				+social(social_2)
+
+		button.modal__close(data-modal-close)

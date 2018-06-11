@@ -1,4 +1,5 @@
 include ../mixins/input
+include ../mixins/dots
 include ../components/logo
 include ../components/social
 
@@ -112,7 +113,23 @@ include ../components/social
 				textarea: true
 			})
 
+	.row.main__separator.main__black
+
+		.col-sm-3
+			+dots(7)
+
+		.col-sm-3
+			+dots(7)(class='dots_big')
+
+	.row.main__separator
+
+		.col-sm-3
+			.info .info
+
 	.row.main__separator
 
 		.col-sm-3
 			a.link(href='#' data-modal='modal') modal-1
+
+		.col-sm-3
+			a.link(href='#' data-modal='modal2') modal-2
