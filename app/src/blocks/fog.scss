@@ -7,7 +7,17 @@ $name: fog;
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: black;
+	background: url($path + 'img/content/section/02.jpg') no-repeat center / cover;
 	z-index: 60;
-	opacity: .5;
+
+	&::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: darken($color-main, 35%);
+		opacity: .93;
+	}
 }
