@@ -2,4 +2,19 @@ $name: link;
 
 .#{$name} {
 	@extend a:not([class]);
+
+	&_arrow_after {
+		position: relative;
+
+		&::after {
+			position: absolute;
+			content: '\f101';
+			font-family: $font-fa;
+			display: inline-block;
+			left: 100%;
+			top: 50%;
+			transform: translateY(-45%);
+			padding-left: .3em;
+		}
+	}
 }

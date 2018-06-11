@@ -1,0 +1,63 @@
+$name: quote;
+
+.#{$name} {
+
+	&__top {
+		padding: 2rem 15px;
+		text-align: center;
+		background: white;
+		border: 1px solid $color-gray;
+		border-bottom: none;
+	}
+
+	&__main {
+		background: $color-light;
+		padding: 15px;
+		position: relative;
+
+		&::after {
+			content: '';
+			position: absolute;
+			top: 100%;
+			left: 10%;
+			border-top: 2.25rem solid $color-light;
+			border-left: 1.5rem solid transparent;
+			border-right: 1.5rem solid transparent;
+		}
+	}
+
+	&__content {
+		padding: 10rem 0;
+		text-align: right;
+		position: relative;
+
+		&::before {
+			content: '“';
+			font-family: 'Arial', sans-serif;
+			font-size: 10rem;
+			position: absolute;
+			top: 9rem;
+			left: 0;
+			line-height: .8;
+			color: white;
+		}
+	}
+
+	&__img {
+		width: 70%;
+		padding-bottom: 70%;
+		background: no-repeat center / cover;
+		border-radius: 50%;
+		filter: grayscale(1);
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	&__title {
+
+	}
+
+	&__author {
+		color: black;
+	}
+}

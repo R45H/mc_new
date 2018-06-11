@@ -1,7 +1,7 @@
 $name: section;
 
 .#{$name} {
-	padding: 6rem 0;
+	padding: 4rem 0;
 	background: no-repeat center / cover;
 	position: relative;
 
@@ -16,6 +16,13 @@ $name: section;
 		color: $color-darkgray;
 		text-transform: uppercase;
 		font-size: 1.9rem;
+	}
+
+	&__quote-wrap {
+
+		@include screen-lg() {
+			margin-top: -16rem;
+		}
 	}
 
 	&_full {
@@ -37,7 +44,21 @@ $name: section;
 		padding-bottom: $height-header * 2;
 	}
 
-	&_fog_dark {
+	&_space_2x {
+		padding-top: 8rem;
+		padding-bottom: 8rem;
+	}
+
+	&_space-top_2x {
+		padding-top: 8rem;
+	}
+
+	&_space-bot_2x {
+		padding-bottom: 8rem;
+	}
+
+	&_fog_dark,
+	&_fog_light {
 
 		&::before {
 			content: '';
@@ -46,7 +67,20 @@ $name: section;
 			left: 0;
 			width: 100%;
 			height: 100%;
+		}
+	}
+
+	&_fog_dark {
+
+		&::before {
 			background: rgba(40, 40, 40, .6);
+		}
+	}
+
+	&_fog_light {
+
+		&::before {
+			background: rgba(255, 255, 255, .8);
 		}
 	}
 }

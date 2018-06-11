@@ -2,6 +2,7 @@ include ../mixins/input
 include ../mixins/dots
 include ../components/logo
 include ../components/social
+include ../components/quote
 
 .container
 
@@ -77,6 +78,9 @@ include ../components/social
 		.col-sm-3
 			a.link(href='#') .link
 
+		.col-sm-3
+			a.link.link_arrow_after(href='#') .link.link_arrow_after
+
 	.row.main__separator
 
 		.col-sm-6.main__black
@@ -138,3 +142,13 @@ include ../components/social
 
 		.col-sm-3
 			.arrow
+
+	.row.main__separator
+
+		.col-sm-3
+			.dots-sm
+
+	.row.main__separator
+
+		.col-sm-3
+			+quote(quote)

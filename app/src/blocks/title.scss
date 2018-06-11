@@ -25,6 +25,20 @@ $name: title;
 	&_tight {
 		font-family: $font-second;
 		font-weight: bold;
+		line-height: 1.2;
+	}
+
+	&_mark {
+
+		&::before {
+			content: '';
+			display: inline-block;
+			width: .4em;
+			height: .4em;
+			background: $color-text;
+			margin-right: .5em;
+			margin-bottom: 0.07em;
+		}
 	}
 
 	&_xs {

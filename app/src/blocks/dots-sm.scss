@@ -1,0 +1,8 @@
+$name: dots-sm;
+
+.#{$name} {
+	display: block;
+	width: 100%;
+	height: 11rem;
+	background: url($path + 'img/icons/dot.png');
+}

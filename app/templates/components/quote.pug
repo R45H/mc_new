@@ -1,0 +1,14 @@
+include social
+
+mixin quote(data)
+	.quote
+
+		.quote__top
+			+social(social)
+
+		.quote__main
+			.dots-sm
+			.quote__content
+				.quote__img.main__space-bot(style='background-image: url(' + data.img + ');')
+				.title.title_xs.title_color_white.main__space-bot.quote__title= data.title
+				.quote__author= data.author
