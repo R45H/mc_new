@@ -19,16 +19,13 @@ $name: btn;
 	padding: 1.3em;
 	word-break: break-word;
 
-	&:hover {
+	&:hover,
+	&:focus {
 		background-color: lighten($color-main, 10%);
 	}
 
 	&:active {
 		background-color: darken($color-main, 10%);
-	}
-
-	&:focus {
-		outline: 1px solid darken($color-main, 10%);
 	}
 
 	&_wide {

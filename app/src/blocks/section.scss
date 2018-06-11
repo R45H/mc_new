@@ -1,5 +1,52 @@
 $name: section;
 
 .#{$name} {
+	padding: 6rem 0;
+	background: no-repeat center / cover;
+	position: relative;
 
+	&__bottom {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+	}
+
+	&__desc {
+		color: $color-darkgray;
+		text-transform: uppercase;
+		font-size: 1.9rem;
+	}
+
+	&_full {
+		min-height: 100vh;
+	}
+
+	&_up {
+		margin-top: -#{$height-header};
+		padding: $height-header 0;
+	}
+
+	&_valign_center {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	&_space-bot_header-2x {
+		padding-bottom: $height-header * 2;
+	}
+
+	&_fog_dark {
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba(40, 40, 40, .6);
+		}
+	}
 }

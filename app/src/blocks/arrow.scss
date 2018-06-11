@@ -1,0 +1,12 @@
+$name: arrow;
+
+.#{$name} {
+	color: white;
+	font-family: $font-fa;
+	display: block;
+	text-align: center;
+
+	&::after {
+		content: '\f078';
+	}
+}

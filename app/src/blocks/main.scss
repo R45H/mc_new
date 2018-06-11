@@ -28,4 +28,8 @@ $name: main;
 	&__black {
 		background: black;
 	}
+
+	&__strong {
+		color: $color-main;
+	}
 }
