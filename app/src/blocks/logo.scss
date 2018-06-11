@@ -2,9 +2,10 @@ $name: logo;
 
 .#{$name} {
 	display: inline-block;
+	height: 8rem;
 
 	&__img {
 		display: block;
-		height: 8rem;
+		height: 100%;
 	}
 }

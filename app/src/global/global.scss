@@ -1,21 +1,17 @@
 html {
 	height: 100%;
-	font-size: 6px;
+	font-size: 5px;
 
 	@include screen-sm() {
-		font-size: 7px;
-	}
-
-	@include screen-md() {
-		font-size: 8px;
+		font-size: 6px;
 	}
 
 	@include screen-lg() {
-		font-size: 9px;
+		font-size: 7px;
 	}
 
 	@include screen-xl() {
-		font-size: 10px;
+		font-size: 8px;
 	}
 }
 

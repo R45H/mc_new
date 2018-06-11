@@ -8,6 +8,9 @@ $(function() {
 	(function() {
 		//=require 'blocks/input/input.js'
 	}());
+	(function() {
+		//=require 'blocks/header/header.js'
+	}());
 	/* Blocks will be inserted here */
 });
 
