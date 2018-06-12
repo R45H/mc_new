@@ -62,6 +62,18 @@ $name: header;
 				}
 			}
 		}
+
+		&:active {
+
+			.#{$name} {
+				// =====
+
+				&__menu-text {
+					color: darken($color-main, 10%);
+					border-bottom-color: darken($color-main, 10%);
+				}
+			}
+		}
 	}
 
 	&__menu-text {
@@ -86,6 +98,31 @@ $name: header;
 
 			&__logo {
 				height: 5rem;
+			}
+		}
+	}
+}
+
+span.#{$name}__menu-link {
+	cursor: default;
+
+	.#{$name} {
+		// =====
+
+		&__menu-text {
+			border-bottom-color: white;
+		}
+	}
+
+	&:hover,
+	&:active {
+
+		.#{$name} {
+			// =====
+
+			&__menu-text {
+				color: white;
+				border-bottom-color: white;
 			}
 		}
 	}

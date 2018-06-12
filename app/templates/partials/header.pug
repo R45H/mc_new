@@ -13,5 +13,10 @@ header.header
 
 					each val in g_menu
 						li.header__menu-item
-							a.header__menu-link(href= val.link)
-								span.header__menu-text= val.name
+
+							if (val.link === page.link)
+								span.header__menu-link
+									span.header__menu-text= val.name
+							else
+								a.header__menu-link(href= val.link)
+									span.header__menu-text= val.name
