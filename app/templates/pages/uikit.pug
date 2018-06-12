@@ -4,6 +4,7 @@ include ../mixins/list
 include ../components/logo
 include ../components/social
 include ../components/quote
+include ../components/quote_2
 
 .container
 
@@ -88,6 +89,9 @@ include ../components/quote
 		.col-sm-3
 			a.link.link_arrow_after(href='#') .link.link_arrow_after
 
+		.col-sm-3
+			a.link.link_upper(href='#') .link.link_upper
+
 	.row.main__separator
 
 		.col-sm-6.main__black
@@ -137,6 +141,9 @@ include ../components/quote
 		.col-sm-3
 			.info .info
 
+		.col-sm-3
+			.info.info_strong .info.info_strong
+
 	.row.main__separator
 
 		.col-sm-3
@@ -159,6 +166,11 @@ include ../components/quote
 
 		.col-sm-3
 			+quote(quote)
+
+		.col-sm-5
+			+quote_2({
+				title: 'И это далеко не всё!'
+			})
 
 	.row.main__separator.main__black
 

@@ -22,4 +22,8 @@ $name: link;
 		font-weight: 300;
 		font-style: italic;
 	}
+
+	&_upper {
+		text-transform: uppercase;
+	}
 }

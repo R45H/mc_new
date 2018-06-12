@@ -62,6 +62,53 @@ $name: section;
 		&:active {
 			background-color: darken($color-main, 10%);
 		}
+
+		&_left {
+
+			@include screen-sm() {
+				left: 10%;
+				right: auto;
+			}
+		}
+
+		&_light {
+			background: white;
+			color: $color-main;
+
+			&:hover {
+				background: white;
+				color: lighten($color-main, 10%);
+			}
+
+			&:active {
+				background: white;
+				color: darken($color-main, 10%);
+			}
+		}
+	}
+
+	&__hand {
+		background: url($path + 'img/icons/hand.svg') no-repeat center / contain;
+		position: absolute;
+		bottom: -8rem;
+		right: 4rem;
+		height: 0;
+		width: 20%;
+		padding-bottom: 60%;
+
+		@include screen-sm() {
+			right: -5rem;
+		}
+
+		@include screen-md() {
+			bottom: auto;
+			top: -8rem;
+		}
+	}
+
+	&__hand-btn {
+		position: relative;
+		z-index: 1;
 	}
 
 	&_full {
@@ -71,6 +118,24 @@ $name: section;
 	&_up {
 		margin-top: -#{$height-header};
 		padding: $height-header 0;
+	}
+
+	&_line_after {
+
+		&::after {
+			content: '';
+			display: block;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			height: 3rem;
+			width: 100%;
+			background: $color-main;
+		}
+	}
+
+	&_overflow_hidden {
+		overflow: hidden;
 	}
 
 	&_valign_center {
@@ -94,6 +159,19 @@ $name: section;
 
 	&_space-bot_2x {
 		padding-bottom: 8rem;
+	}
+
+	&_space_none {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
+	&_space-top_none {
+		padding-top: 0;
+	}
+
+	&_space-bot_none {
+		padding-bottom: 0;
 	}
 
 	&_fog_dark,
@@ -121,5 +199,9 @@ $name: section;
 		&::before {
 			background: rgba(255, 255, 255, .8);
 		}
+	}
+
+	&_color_main {
+		background: $color-main;
 	}
 }

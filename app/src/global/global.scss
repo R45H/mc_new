@@ -117,3 +117,10 @@ hr {
 		text-align: center;
 	}
 }
+
+.center-sm-max {
+
+	@include screen-sm(max) {
+		text-align: center;
+	}
+}

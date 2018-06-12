@@ -1,5 +1,6 @@
 include ../mixins/list
 include ../components/quote
+include ../components/quote_2
 
 .section.section_up.section_full.section_valign_center.section_space-bot_header-2x.section_fog_dark(style='background-image: url(img/content/section/01.jpg); background-position: 75% 0;')
 	.container
@@ -30,7 +31,7 @@ include ../components/quote
 
 	.section__next
 
-.section.section_fog_light.section_space_2x(style='background-image: url(img/content/section/02.jpg);')
+.section.section_fog_light.section_space_2x.section_line_after(style='background-image: url(img/content/section/02.jpg);')
 	.container
 		.row
 
@@ -51,7 +52,7 @@ include ../components/quote
 			.col-12.main__space-bot
 				a.btn(href='#' data-modal='modal') Не нажимай сюда, если хочешь оставить все как есть
 			.col-12
-				a.link.link_thin.link_arrow_after(href='#') Вот что говорят парни о проекте
+				a.link.link_thin.link_arrow_after.link_upper(href='#') Вот что говорят парни о проекте
 
 .section.section_fog_dark.section_space-top_2x(style='background-image: url(img/content/section/03.jpg);')
 	.container
@@ -66,3 +67,38 @@ include ../components/quote
 
 				each val in list
 					+list(val)(class='main__list')
+
+.section.section_color_main.section_space-top_2x
+	.container
+		.row
+			.col-sm-4.offset-sm-1.order-sm-last.main__space-bot
+				.dots-sm
+			.col-sm-7.main__space-bot
+				.title.title_color_white.center-sm-max
+					span.mark Вот что ты узнаешь в бесплатной рассылке:
+	.section__next.section__next_light.section__next_left
+
+.section.section_space-top_2x.section_space-bot_none
+	.container
+		.row
+
+			each val, i in content_2
+				.col-sm-6.main__space-bot
+					.title.title_tight.title_color_main.main__space-bot-half= (i + 1) + '. ' + val.title
+					p= val.text
+
+.section.section_space_2x.section_overflow_hidden
+	.container
+		.row.main__space-bot-2x
+			.col-md-5
+				+quote_2({
+					title: 'И это далеко не всё!'
+				})
+
+			.col-md-7
+				.info.info_strong.main__info Получи более 30 видео упражнений, которые откроют тебе реальность, в которой познакомиться и заинтересовать классную девушку - это самое простое что может быть в жизни каждого парня.
+
+		.text-center
+			a.btn.section__hand-btn(href='#' data-modal='modal') Получить все видео упражнения
+
+		.section__hand

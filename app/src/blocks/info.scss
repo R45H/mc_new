@@ -10,4 +10,15 @@ $name: info;
 	padding: 1rem 3rem;
 	font-weight: bold;
 	text-align: center;
+
+	&_strong {
+		border-color: $color-light;
+		box-shadow: none;
+		font-family: $font-main;
+		text-transform: uppercase;
+		padding: 2rem 3rem;
+		font-size: 2.4rem;
+		text-align: left;
+		font-weight: normal;
+	}
 }
