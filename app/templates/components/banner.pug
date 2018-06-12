@@ -1,0 +1,18 @@
+include ../mixins/dots
+
+mixin banner
+	.banner
+		.title.title_xs.title_color_light.main__space-bot-half.banner__author= global.author
+		.title.title_lg.title_tight.title_color_white.main__space-bot.banner__title Бесплатная
+			br
+			| консультация
+		a.btn.btn_wide.main__space-bot(href='#' data-modal='modal2') Записаться
+		.banner__desc.main__space-bot-half= 'Осталось консультаций в '
+			span.main__strong этом месяце:
+
+		.banner__total
+			+dots(7)
+			.banner__total-i
+				span.main__strong 10
+				| /10
+			+dots(7)

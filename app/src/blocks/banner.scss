@@ -1,0 +1,31 @@
+$name: banner;
+
+.#{$name} {
+	border: 5px solid $color-light;
+	text-align: center;
+	padding: 5rem;
+	color: white;
+
+	&__author {
+
+	}
+
+	&__title {
+
+	}
+
+	&__desc {
+
+	}
+
+	&__total {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__total-i {
+		margin: 0 .5em;
+		font-size: 3.8rem;
+	}
+}

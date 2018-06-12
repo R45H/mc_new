@@ -6,6 +6,7 @@ include ../components/social
 include ../components/quote
 include ../components/quote_2
 include ../components/review
+include ../components/banner
 
 .container
 
@@ -181,11 +182,15 @@ include ../components/review
 		.col-12.main__space-bot
 			+list(list[0])(class='list_column')
 
-.main__separator
+.main__space-col
 	+review(review)
 
-.main__separator
+.main__space-col
 	+review(review)(class='review_reversed')
 
 .main__separator
 	+review(review)(class='review_dark')
+
+.container
+	.row.main__separator.main__black
+		+banner
