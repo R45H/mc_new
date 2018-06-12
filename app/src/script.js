@@ -17,6 +17,9 @@ $(function() {
 	(function() {
 		//=require 'blocks/section/section.js'
 	}());
+	(function() {
+		//=require 'blocks/review/review.js'
+	}());
 	/* Blocks will be inserted here */
 });
 

@@ -1,6 +1,7 @@
 include ../mixins/list
 include ../components/quote
 include ../components/quote_2
+include ../components/review
 
 .section.section_up.section_full.section_valign_center.section_space-bot_header-2x.section_fog_dark(style='background-image: url(img/content/section/01.jpg); background-position: 75% 0;')
 	.container
@@ -105,6 +106,9 @@ include ../components/quote_2
 
 .section.section_space_2x.section_fog_dark.section_line_before(style='background-image: url(img/content/section/04.jpg);')
 	.container
+
+		.section__clouds
+
 		.row
 			.col-md-10.offset-md-1
 				h2.title.title_color_white.main__space-bot
@@ -118,4 +122,5 @@ include ../components/quote_2
 						br
 						| Если ты посчитаешь, что этого недостаточно, я не собираюсь тебе что-то доказывать.
 
-		.section__clouds
+.section.section_space_none
+	+review(review)

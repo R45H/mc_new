@@ -1,0 +1,19 @@
+mixin review(data)
+	.review(class= attributes.class)
+
+		.review__dots-wrap
+
+		.container.review__wrap
+
+			each val in data
+				.review__item
+					.review__i
+
+						.review__left
+							.review__img-wrap
+								.review__img(style='background-image: url(' + val.img + ');')
+							a.link.review__link(href= val.link target='_blank')= val.link_text
+
+						.review__right
+							.title.review__title= val.name
+							.review__text!= val.text

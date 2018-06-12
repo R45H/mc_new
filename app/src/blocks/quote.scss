@@ -43,7 +43,7 @@ $name: quote;
 
 		&::before {
 			content: '“';
-			font-family: 'Arial', sans-serif;
+			font-family: $font-system;
 			font-size: 10rem;
 			position: absolute;
 			top: 9rem;

@@ -5,6 +5,7 @@ include ../components/logo
 include ../components/social
 include ../components/quote
 include ../components/quote_2
+include ../components/review
 
 .container
 
@@ -179,3 +180,12 @@ include ../components/quote_2
 
 		.col-12.main__space-bot
 			+list(list[0])(class='list_column')
+
+.main__separator
+	+review(review)
+
+.main__separator
+	+review(review)(class='review_reversed')
+
+.main__separator
+	+review(review)(class='review_dark')
