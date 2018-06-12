@@ -1,3 +1,4 @@
+include ../mixins/list
 include ../components/quote
 
 .section.section_up.section_full.section_valign_center.section_space-bot_header-2x.section_fog_dark(style='background-image: url(img/content/section/01.jpg); background-position: 75% 0;')
@@ -51,3 +52,17 @@ include ../components/quote
 				a.btn(href='#' data-modal='modal') Не нажимай сюда, если хочешь оставить все как есть
 			.col-12
 				a.link.link_thin.link_arrow_after(href='#') Вот что говорят парни о проекте
+
+.section.section_fog_dark.section_space-top_2x(style='background-image: url(img/content/section/03.jpg);')
+	.container
+		.row
+			.col-md-7.main__space-bot
+				h2.title.title_color_white.center-md-max
+					span.mark Принципы проекта, которые должен знать каждый!
+		.row
+			.col-md-5.main__space-bot
+				.arrow
+			.col-12
+
+				each val in list
+					+list(val)(class='main__list')

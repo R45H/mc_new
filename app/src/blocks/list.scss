@@ -1,0 +1,87 @@
+$name: list;
+
+.#{$name} {
+	text-align: center;
+
+	@include screen-md() {
+		display: flex;
+		align-items: baseline;
+		text-align: right;
+	}
+
+	&__num {
+		color: white;
+		border: 3px solid $color-main;
+		font-size: 4rem;
+		line-height: 1;
+		display: inline-block;
+		width: auto;
+		padding: .15em 1em;
+		margin-bottom: 2rem;
+
+		@include screen-md() {
+			padding: .15em .3em;
+			margin-bottom: 0;
+			flex: none;
+			align-self: flex-start;
+			width: 10%;
+		}
+	}
+
+	&__title {
+		margin-bottom: 2rem;
+
+		@include screen-md() {
+			flex: none;
+			width: 30%;
+			padding: 0 15px;
+			margin-bottom: 0;
+		}
+	}
+
+	&__text {
+		color: white;
+		text-align: center;
+
+		@include screen-md() {
+			text-align: left;
+		}
+	}
+
+	&_column {
+
+		@include screen-md() {
+			display: block;
+			text-align: center;
+		}
+
+		.#{$name} {
+			// =====
+
+			&__num {
+
+				@include screen-md() {
+					padding: .15em 1em;
+					margin-bottom: 2rem;
+					width: auto;
+				}
+			}
+
+			&__title {
+
+				@include screen-md() {
+					width: 100%;
+					padding: 0;
+					margin-bottom: 2rem;
+				}
+			}
+
+			&__text {
+
+				@include screen-md() {
+					text-align: center;
+				}
+			}
+		}
+	}
+}

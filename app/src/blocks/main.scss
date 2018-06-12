@@ -36,4 +36,12 @@ $name: main;
 	&__strong {
 		color: $color-main;
 	}
+
+	&__list {
+		margin-bottom: 30px;
+
+		@include screen-md() {
+			min-height: 15rem;
+		}
+	}
 }

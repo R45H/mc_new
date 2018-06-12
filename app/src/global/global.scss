@@ -99,10 +99,21 @@ hr {
 	margin: 0;
 }
 
+.container {
+	position: relative;
+}
+
 .text-right {
 	text-align: right;
 }
 
 .text-center {
 	text-align: center;
+}
+
+.center-md-max {
+
+	@include screen-md(max) {
+		text-align: center;
+	}
 }

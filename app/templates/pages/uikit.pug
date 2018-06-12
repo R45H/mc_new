@@ -1,5 +1,6 @@
 include ../mixins/input
 include ../mixins/dots
+include ../mixins/list
 include ../components/logo
 include ../components/social
 include ../components/quote
@@ -25,6 +26,9 @@ include ../components/quote
 
 		.col-sm-6.main__space-col
 			.title.title_tight .title.title_tight
+
+		.col-sm-6.main__space-col
+			.title.title_mark .title.title_mark
 
 		.col-12.main__space-col
 			.title.title_xs .title.title_xs
@@ -155,3 +159,11 @@ include ../components/quote
 
 		.col-sm-3
 			+quote(quote)
+
+	.row.main__separator.main__black
+
+		.col-12.main__space-bot
+			+list(list[0])
+
+		.col-12.main__space-bot
+			+list(list[0])(class='list_column')
