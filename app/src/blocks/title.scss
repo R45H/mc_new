@@ -5,6 +5,7 @@ $name: title;
 	color: black;
 	text-transform: uppercase;
 	font-weight: normal;
+	margin: 0;
 
 	&_lower {
 		text-transform: none;
@@ -38,6 +39,23 @@ $name: title;
 			background: $color-text;
 			margin-right: .5em;
 			margin-bottom: .07em;
+		}
+	}
+
+	&_icon_clock {
+		padding-left: 3em;
+		position: relative;
+
+		&::before {
+			content: '';
+			display: inline-block;
+			background: url($path + '../img/icons/clock.svg') no-repeat center / contain;
+			width: 2.5em;
+			height: 2.5em;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			left: 0;
 		}
 	}
 

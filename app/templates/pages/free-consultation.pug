@@ -1,4 +1,6 @@
 include ../components/banner
+include ../components/review
+include ../mixins/simple-list
 
 .section.section_up.section_full.section_valign_center.section_fog_dark(style='background-image: url(img/content/section/05.jpg); background-position: 75% 0;')
 	.container
@@ -8,3 +10,57 @@ include ../components/banner
 					span.mark.mark_color_main 40-минутная бесплатная консультация
 				.arrow.main__space-bot
 				+banner
+
+.section.section_space_2x.section_fog_dark(style='background-image: url(img/content/section/04.jpg);')
+	.container
+		.row
+			.col-md-8.offset-md-2.col-xl-6.offset-xl-3
+				h2.title.title_color_white.title_icon_clock.main__space-bot-2x
+					span.mark 40-минутная бесплатная консультация
+
+		.row
+			.col-md-10.offset-md-1
+				p.title.title_xs.title_color_white.title_lower.main__space-bot Я очень честный и прямолинейный человек, об этом вы можете спросить любого, кто проходил у меня консультации. Порой настолько честный, что кому-то это не нравится. Но я так себя веду потому что знаю, что для любого развития нужно в первую очередь взглянуть правде в глаза!
+				p.title.title_xs.title_color_white.title_lower.main__space-bot= 'В моей жизни мне никто не хотел мне помогать, поэтому я понимаю как тяжело порой бывает разобраться в себе, разобраться в своих проблемах и найти просто человеческую поддержку, поэтому '
+					span.mark.mark_color_main я и провожу бесплатные консультации.
+				p.title.title_xs.title_color_white.title_lower.main__space-bot= 'Я искренне люблю девушек и хочу, чтобы '
+					span.mark.mark_color_main= 'нормальные парни подходили и знакомились с ними, '
+					| создавая прочные отношения на долгие годы. Поэтому и стараюсь рассказывать об этом как можно большему количеству парней!
+				p.title.title_xs.title_color_white.title_lower.main__space-bot= 'И если у тебя есть вопросы, на которые никто не может тебе дать исчерпывающий ответ или у тебя есть проблемы, которые не дают тебе покоя, запишись на '
+					span.mark.mark_color_main бесплатную консультацию.
+				p.title.title_xs.title_color_white.title_lower Целых 40-минут мы один на один будем разбираться с твоей проблемой, найдем причину твоих неудач, ты получишь четкое руководство как решить ту или иную проблему, чтобы ты видел в каком направлении тебе нужно двигаться.
+
+.section.section_color_main.section_space-top_2x
+	.container
+		.row
+			.col-sm-4.offset-sm-1.order-sm-last.main__space-bot
+				.dots-sm
+			.col-sm-7.main__space-bot
+				.title.title_color_white.center-sm-max
+					span.mark Правила проведения бесплатной консультации
+	.section__next.section__next_light.section__next_left
+
+.section.section_space_2x
+	.container
+		.row.justify-content-around
+
+			each val in content_3
+				.col-sm-6.col-md-5.main__space-bot
+					+simple-list(val)
+
+.section.section_space_4x.section_fog_dark.section_question(style='background-image: url(img/content/section/04.jpg);')
+	.container
+
+		.section__clouds
+
+		.row.justify-content-center
+			.col-sm-10.col-md-8.col-lg-7.text-center
+				h2.title.title_color_white.main__space-bot
+					span.mark= 'Я ничего не слышал об артуре, можно ли ему доверять?'
+
+				.arrow.main__space-bot
+
+				h3.title.title_lower.title_color_white Послушай, что говорят сами парни о своей жизни после того, как узнали «Принципы Артура»
+
+.section.section_space_none
+	+review(review)

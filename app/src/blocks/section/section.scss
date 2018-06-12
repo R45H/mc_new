@@ -113,7 +113,7 @@ $name: section;
 
 	&__clouds {
 
-		@include screen-sm() {
+		@include screen-md() {
 			position: absolute;
 			top: 0;
 			left: 0;
@@ -125,7 +125,7 @@ $name: section;
 		&::before,
 		&::after {
 
-			@include screen-sm() {
+			@include screen-md() {
 				content: '';
 				width: 10rem;
 				height: 7rem;
@@ -136,15 +136,15 @@ $name: section;
 
 		&::before {
 
-			@include screen-sm() {
-				left: -30px;
+			@include screen-md() {
+				left: -7px;
 			}
 		}
 
 		&::after {
 
-			@include screen-sm() {
-				right: -30px;
+			@include screen-md() {
+				right: -7px;
 			}
 		}
 	}
@@ -173,6 +173,26 @@ $name: section;
 		}
 	}
 
+	&_question {
+
+		&::after {
+			content: '?';
+			position: absolute;
+			font-size: 14.4rem;
+			color: white;
+			background: $color-main;
+			top: -8rem;
+			left: 50%;
+			transform: translateX(-50%);
+			line-height: 1;
+			width: 16rem;
+			height: 16rem;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+
 	&_overflow_hidden {
 		overflow: hidden;
 	}
@@ -198,6 +218,19 @@ $name: section;
 
 	&_space-bot_2x {
 		padding-bottom: 8rem;
+	}
+
+	&_space_4x {
+		padding-top: 16rem;
+		padding-bottom: 16rem;
+	}
+
+	&_space-top_4x {
+		padding-top: 16rem;
+	}
+
+	&_space-bot_4x {
+		padding-bottom: 16rem;
 	}
 
 	&_space_none {

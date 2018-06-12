@@ -1,0 +1,19 @@
+$name: simple-list;
+
+.#{$name} {
+
+	&__num {
+		display: inline-block;
+		color: $color-main;
+		font-size: 3.7rem;
+		margin-right: .3em;
+	}
+
+	&__text {
+		display: inline;
+		font-size: 3rem;
+		font-family: $font-second;
+		line-height: 1.2;
+		font-weight: bold;
+	}
+}
