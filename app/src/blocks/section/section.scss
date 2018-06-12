@@ -111,6 +111,44 @@ $name: section;
 		z-index: 1;
 	}
 
+	&__clouds {
+
+		@include screen-sm() {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			opacity: .5;
+		}
+
+		&::before,
+		&::after {
+
+			@include screen-sm() {
+				content: '';
+				width: 10rem;
+				height: 7rem;
+				background: url($path + 'img/icons/cloud.svg') no-repeat center / contain;
+				position: absolute;
+			}
+		}
+
+		&::before {
+
+			@include screen-sm() {
+				left: -30px;
+			}
+		}
+
+		&::after {
+
+			@include screen-sm() {
+				right: -30px;
+			}
+		}
+	}
+
 	&_full {
 		min-height: 100vh;
 	}
@@ -120,13 +158,14 @@ $name: section;
 		padding: $height-header 0;
 	}
 
-	&_line_after {
+	&_line_before {
+		margin-top: 3rem;
 
 		&::after {
 			content: '';
 			display: block;
 			position: absolute;
-			bottom: 0;
+			bottom: 100%;
 			left: 0;
 			height: 3rem;
 			width: 100%;
