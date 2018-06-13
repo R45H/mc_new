@@ -42,6 +42,37 @@ $name: title;
 		}
 	}
 
+	&_quote {
+		position: relative;
+
+		&::before,
+		&::after {
+			font-family: $font-system;
+			color: $color-main;
+			font-size: 2em;
+			font-weight: bold;
+			line-height: 0;
+			vertical-align: middle;
+		}
+
+		&::before {
+			content: '\201C';
+			margin-right: .2em;
+
+			@include screen-sm() {
+				margin-right: 0;
+				position: absolute;
+				top: .42em;
+				left: -.6em;
+			}
+		}
+
+		&::after {
+			content: '\201D';
+			margin-left: .2em;
+		}
+	}
+
 	&_icon_clock {
 		padding-left: 3em;
 		position: relative;

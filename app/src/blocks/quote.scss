@@ -42,7 +42,7 @@ $name: quote;
 		position: relative;
 
 		&::before {
-			content: '“';
+			content: '\201C';
 			font-family: $font-system;
 			font-size: 10rem;
 			position: absolute;
