@@ -290,4 +290,8 @@ $name: section;
 	&_color_gray {
 		background: $color-gray;
 	}
+
+	&_color_dark {
+		background: $color-text-lighter;
+	}
 }

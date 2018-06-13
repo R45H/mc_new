@@ -1,6 +1,7 @@
 $color-main: #e5462e;
 $color-light: #ff9282;
 $color-text: #333;
+$color-text-lighter: lighten($color-text, 5%);
 $color-darkgray: #999;
 $color-gray: #e5e5e5;
 
