@@ -9,7 +9,7 @@ $name: video;
 	&:hover {
 
 		.video__play-fill {
-			transition: fill .1s cubic-bezier(0, 0,0.2, 1), fill-opacity .1s cubic-bezier(0, 0, .2, 1);
+			transition: fill .1s cubic-bezier(0, 0, .2, 1), fill-opacity .1s cubic-bezier(0, 0, .2, 1);
 			fill: #cc181e;
 			fill-opacity: 1;
 		}
@@ -48,7 +48,7 @@ $name: video;
 	}
 
 	&__play-fill {
-		transition: fill .1s cubic-bezier(.4, 0, 1, 1), fill-opacity .1s cubic-bezier(0.4, 0.0, 1, 1);
+		transition: fill .1s cubic-bezier(.4, 0, 1, 1), fill-opacity .1s cubic-bezier(.4, 0, 1, 1);
 		fill: #1f1f1f;
 		fill-opacity: .81;
 	}
