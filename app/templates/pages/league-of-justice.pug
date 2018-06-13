@@ -1,5 +1,8 @@
 include ../mixins/simple-list
+include ../mixins/member
+include ../mixins/list
 include ../components/rate
+include ../components/review
 
 .section.section_up.section_full.section_valign_center.section_fog_dark(style='background-image: url(img/content/section/07.jpg);')
 	.container.text-center
@@ -33,3 +36,49 @@ include ../components/rate
 						div!= val.text
 
 		+rate(rate)
+
+.section.section_space_2x.section_color_main.section_fill_gobbler
+	.container.text-center
+		.title.title_color_white.title_tight.title_lower В этой «Лиге Справедливости» я давал все самое лучшее, что только знаю, но я не стаю на месте. И учитывая мой громадный опыт общения с парнями, который я получил в этой движухе, я с уверенностью могу сказать, что следующая движуха будет в разы лучше!
+
+.section.section_space_2x.section_color_gray
+	.container.text-center
+
+		.row.justify-content-center.main__space-bot
+			.col-md-8.col-lg-6
+				h2.title.title_lower.title_tight Видео реальных знакомств, которые мы разбирали на движухе с участниками
+
+		.row.justify-content-center
+			.col-md-10.col-lg-8
+				.video(data-id="Y_NjFah58LM")
+
+.section.section_space_2x.section_fog_dark.section_line_before(style='background-image: url(img/content/section/04.jpg);')
+	.container
+		.text-center
+			h2.title
+				span.mark Участники
+
+	.section__next.section__next_center
+
+.section.section_space-top_4x.section_space-bot_2x
+	.container
+		.row
+
+			each val in member
+				.col-6.col-sm-4.col-md-3.main__space-bot-2x
+					+member(val)
+
+.section.section_space_none
+	+review(review_3)(class='review_dark')
+
+.section.section_space_2x.section_fog_dark(style='background-image: url(img/content/section/04.jpg);')
+	.container
+
+		.row.justify-content-center
+			.col-md-8.col-lg-7.col-xl-6.main__space-bot-2x.text-center
+				h2.title
+					span.mark Ответы на часто задаваемые вопросы:
+
+			each val, i in list_2
+				.col-md-9.main__space-bot
+					+list(val, i + 1)(class='list_column')

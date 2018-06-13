@@ -71,6 +71,14 @@ $name: section;
 			}
 		}
 
+		&_center {
+
+			@include screen-sm() {
+				right: 50%;
+				transform: translateX(50%);
+			}
+		}
+
 		&_light {
 			background: white;
 			color: $color-main;
@@ -293,5 +301,10 @@ $name: section;
 
 	&_color_dark {
 		background: $color-text-lighter;
+	}
+
+	&_fill_gobbler {
+		background-image: url($path + 'img/icons/gobbler.png');
+		background-repeat: repeat;
 	}
 }

@@ -20,6 +20,9 @@ $(function() {
 	(function() {
 		//=require 'blocks/review/review.js'
 	}());
+	(function() {
+		//=require 'blocks/video/video.js'
+	}());
 	/* Blocks will be inserted here */
 });
 

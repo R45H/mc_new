@@ -10,9 +10,20 @@ mixin review(data)
 					.review__i
 
 						.review__left
+
 							.review__img-wrap
-								.review__img(style='background-image: url(' + val.img + ');')
-							a.link.review__link(href= val.link target='_blank')= val.link_text
+								.review__img(
+									style='background-image: url(' + val.img + ');'
+									role='img'
+									aria-label= val.name
+									title= val.name
+								)
+
+							a.link.review__link(
+								href= val.link
+								target='_blank'
+								rel='nofollow'
+							)= val.link_text
 
 						.review__right
 							.title.review__title= val.name

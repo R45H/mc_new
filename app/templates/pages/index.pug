@@ -66,8 +66,8 @@ include ../components/review
 				.arrow
 			.col-12
 
-				each val in list
-					+list(val)(class='main__list')
+				each val, i in list
+					+list(val, i + 1)(class='main__list')
 
 .section.section_color_main.section_space-top_2x
 	.container

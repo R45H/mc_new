@@ -2,6 +2,7 @@ include ../mixins/input
 include ../mixins/dots
 include ../mixins/list
 include ../mixins/simple-list
+include ../mixins/member
 include ../components/logo
 include ../components/social
 include ../components/quote
@@ -197,10 +198,10 @@ include ../components/rate
 	.row.main__separator.main__black
 
 		.col-12.main__space-bot
-			+list(list[0])
+			+list(list[0], 1)
 
 		.col-12.main__space-bot
-			+list(list[0])(class='list_column')
+			+list(list[0], 1)(class='list_column')
 
 .main__space-col
 	+review(review)
@@ -220,3 +221,11 @@ include ../components/rate
 	.row.main__separator
 		.col-12
 			+rate(rate)
+
+	.row.main__separator
+		.col-8
+			.video(data-id="Y_NjFah58LM")
+
+	.row.main__separator
+		.col-3
+			+member(member[0])

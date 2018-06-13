@@ -1,0 +1,20 @@
+mixin member(data)
+	.member
+
+		.member__wrap
+
+			.member__img-wrap
+				.member__img(
+					style='background-image: url(' + data.img + ');'
+					role='img'
+					aria-label= data.name
+					title= data.name
+				)
+
+			.member__name= data.name
+
+		a.link.member__link(
+			href= data.link
+			target='_blank'
+			rel='nofollow'
+		)= data.link_text

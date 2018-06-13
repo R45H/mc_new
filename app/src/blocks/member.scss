@@ -1,0 +1,32 @@
+$name: member;
+
+.#{$name} {
+
+	&__wrap {
+		display: flex;
+		align-items: center;
+		margin-bottom: 1.5rem;
+	}
+
+	&__img-wrap {
+		flex: none;
+		width: 35%;
+		margin-right: 3rem;
+	}
+
+	&__img {
+		display: block;
+		width: 100%;
+		padding-bottom: 100%;
+		background: no-repeat center / cover;
+		border-radius: 50%;
+	}
+
+	&__name {
+
+	}
+
+	&__link {
+
+	}
+}
