@@ -1,4 +1,5 @@
 include ../mixins/simple-list
+include ../components/rate
 
 .section.section_up.section_full.section_valign_center.section_fog_dark(style='background-image: url(img/content/section/07.jpg);')
 	.container.text-center
@@ -13,7 +14,7 @@ include ../mixins/simple-list
 
 .section.section_space_2x
 	.container
-		.row
+		.row.main__space-bot
 			.col-md-10.offset-md-1
 
 				.text-center.main__space-bot
@@ -30,3 +31,5 @@ include ../mixins/simple-list
 					.main__space-bot
 						+simple-list(val.title, i + 1)(class='simple-list_color_red')
 						div!= val.text
+
+		+rate(rate)

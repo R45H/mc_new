@@ -7,7 +7,7 @@ $name: star;
 	align-items: center;
 	justify-content: center;
 	font-size: 4rem;
-	color: $color-gray;
+	color: $color-main;
 
 	&::after {
 		content: '\f005';
@@ -15,7 +15,7 @@ $name: star;
 		line-height: 1;
 	}
 
-	&_enabled {
-		color: $color-main;
+	&_disabled {
+		color: $color-gray;
 	}
 }

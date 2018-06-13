@@ -8,6 +8,7 @@ include ../components/quote
 include ../components/quote_2
 include ../components/review
 include ../components/banner
+include ../components/rate
 
 .container
 
@@ -129,7 +130,7 @@ include ../components/banner
 			.star
 
 		.col-sm-1
-			.star.star_enabled
+			.star.star_disabled
 
 	.row.main__separator
 
@@ -211,5 +212,11 @@ include ../components/banner
 	+review(review)(class='review_dark')
 
 .container
+
 	.row.main__separator.main__black
-		+banner
+		.col-sm-5
+			+banner
+
+	.row.main__separator
+		.col-12
+			+rate(rate)
