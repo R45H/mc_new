@@ -1,6 +1,7 @@
 include ../mixins/input
 include ../mixins/dots
 include ../mixins/list
+include ../mixins/simple-list
 include ../components/logo
 include ../components/social
 include ../components/quote
@@ -53,6 +54,14 @@ include ../components/banner
 
 	.row.main__separator
 
+		.col-sm-3
+			+simple-list('.simple-list', 1)
+
+		.col-sm-6
+			+simple-list('.simple-list.simple-list_color_red', 1)(class='simple-list_color_red')
+
+	.row.main__separator
+
 		.col-sm-3.main__space-col.main__black
 			.mark .mark
 
@@ -61,13 +70,17 @@ include ../components/banner
 
 	.row.main__separator
 
-		.col-sm-6.main__space-col.main__black
+		.col-sm-3.main__space-col.main__black
 			.bracket
 				.bracket__text .bracket
 
-		.col-sm-6.main__space-col.main__black
+		.col-sm-3.main__space-col.main__black
 			.bracket.bracket_wide
 				.bracket__text .bracket.bracket_wide
+
+		.col-sm-3.main__space-col.main__black
+			.bracket.bracket_tall
+				.bracket__text .bracket.bracket_tall
 
 	.row.main__separator
 

@@ -1,4 +1,4 @@
-mixin simple-list(data)
-	.simple-list
-		.simple-list__num= data.num + '. '
-		.simple-list__text= data.text
+mixin simple-list(text, num)
+	.simple-list(class= attributes.class)
+		.simple-list__num= num + '. '
+		.simple-list__text= text

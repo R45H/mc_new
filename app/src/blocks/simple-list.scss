@@ -16,4 +16,8 @@ $name: simple-list;
 		line-height: 1.2;
 		font-weight: bold;
 	}
+
+	&_color_red {
+		color: $color-main;
+	}
 }

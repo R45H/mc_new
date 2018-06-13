@@ -44,9 +44,9 @@ include ../mixins/simple-list
 	.container
 		.row.justify-content-around
 
-			each val in content_3
+			each val, i in content_3
 				.col-sm-6.col-md-5.main__space-bot
-					+simple-list(val)
+					+simple-list(val, i + 1)
 
 .section.section_space_4x.section_fog_dark.section_question(style='background-image: url(img/content/section/04.jpg);')
 	.container

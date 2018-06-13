@@ -35,4 +35,15 @@ $name: bracket;
 			}
 		}
 	}
+
+	&_tall {
+
+		.#{$name} {
+			// =====
+
+			&__text {
+				line-height: 1.7;
+			}
+		}
+	}
 }

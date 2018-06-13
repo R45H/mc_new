@@ -1,0 +1,32 @@
+include ../mixins/simple-list
+
+.section.section_up.section_full.section_valign_center.section_fog_dark(style='background-image: url(img/content/section/07.jpg);')
+	.container.text-center
+		.main__space-bot-2x
+			h1.title.title_lg
+				span.mark Новая двух месячная движуха
+			h2.title.title_xl
+				span.mark.mark_color_main «Лига Справедливости»
+
+		.title.title_lower.bracket.bracket_wide.bracket_tall
+			.mark.mark_color_main.bracket__text Набор закрыт
+
+.section.section_space_2x
+	.container
+		.row
+			.col-md-10.offset-md-1
+
+				.text-center.main__space-bot
+					h2.title.title_tight.title_color_main Что это?
+
+				.main__space-bot
+
+						p Это не тренинг личностного роста и даже не просто программа о том, как легко знакомиться и строить крепкие отношения с классными девушками!
+						p
+							b= '«Лига Справедливости» не похожа ни на один банальный пикап тренинг или программ по соблазнению девушек от «а» до «я». '
+							| И вот чем она кардинально отличается:
+
+				each val, i in content_5
+					.main__space-bot
+						+simple-list(val.title, i + 1)(class='simple-list_color_red')
+						div!= val.text
