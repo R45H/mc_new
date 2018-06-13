@@ -17,20 +17,90 @@ $name: main;
 		margin-bottom: 30px;
 	}
 
+	&__space {
+		margin-top: 4rem;
+		margin-bottom: 4rem;
+	}
+
+	&__space-top {
+		margin-top: 4rem;
+	}
+
 	&__space-bot {
 		margin-bottom: 4rem;
+	}
+
+	&__space-half {
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+	}
+
+	&__space-top-half {
+		margin-top: 2rem;
 	}
 
 	&__space-bot-half {
 		margin-bottom: 2rem;
 	}
 
+	&__space-2x {
+		margin-top: 8rem;
+		margin-bottom: 8rem;
+	}
+
+	&__space-top-2x {
+		margin-top: 8rem;
+	}
+
 	&__space-bot-2x {
 		margin-bottom: 8rem;
 	}
 
+	&__space-inner {
+		padding-top: 4rem;
+		padding-bottom: 4rem;
+	}
+
+	&__space-top-inner {
+		padding-top: 4rem;
+	}
+
+	&__space-bot-inner {
+		padding-bottom: 4rem;
+	}
+
+	&__space-half-inner {
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+	}
+
+	&__space-top-half-inner {
+		padding-top: 2rem;
+	}
+
+	&__space-bot-half-inner {
+		padding-bottom: 2rem;
+	}
+
+	&__space-2x-inner {
+		padding-top: 8rem;
+		padding-bottom: 8rem;
+	}
+
+	&__space-top-2x-inner {
+		padding-top: 8rem;
+	}
+
+	&__space-bot-2x-inner {
+		padding-bottom: 8rem;
+	}
+
 	&__black {
 		background: black;
+	}
+
+	&__white {
+		background: white;
 	}
 
 	&__strong {
@@ -48,5 +118,10 @@ $name: main;
 	&__info {
 		height: 100%;
 		padding-right: 20rem;
+	}
+
+	&__icon {
+		width: 10rem;
+		height: 10rem;
 	}
 }

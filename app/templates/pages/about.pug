@@ -12,3 +12,19 @@
 				.title.title_color_white.section__about= global.author
 
 	.section__next
+
+.section.section_space_none.section_color_gray
+	.container.main__space-2x-inner.main__white
+
+		each val in content_4
+			.row.main__space-bot-2x
+				.col-sm-10.offset-sm-1.col-md-8.offset-md-2.col-lg-6.offset-lg-3.main__space-bot-half.text-center
+					img.main__icon.main__space-bot(src= val.icon alt='Icon')
+					h3.title.title_tight.title_color_main.main__space-bot-half= val.title
+					h3.title.title_tight.title_xs(class= val.subtitle_upper ? '' : 'title_lower')= val.subtitle
+				.col-sm-10.offset-sm-1.col-lg-8.offset-lg-2!= val.text
+
+		.row
+			.col-md-8.offset-md-2.col-lg-6.offset-lg-3.text-center
+				h3.title.title_tight.title_color_main.main__space-bot Не наступай на те же грабли что и я, но выбор остается за тобой….
+				a.btn.btn_wide(href='#' data-modal='modal') Забыть о проблемах с девушками
