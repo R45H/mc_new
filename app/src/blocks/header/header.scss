@@ -10,7 +10,11 @@ $name: header;
 	background: linear-gradient(to bottom, $color-text, transparent);
 
 	&__wrap {
-		padding: 0 6rem;
+		padding: 0 15px;
+
+		@include screen-lg() {
+			padding: 0 6rem;
+		}
 	}
 
 	&__row {
@@ -34,9 +38,13 @@ $name: header;
 	}
 
 	&__menu {
-		list-style-type: none;
-		display: flex;
-		height: 100%;
+		display: none;
+
+		@include screen-md() {
+			list-style-type: none;
+			display: flex;
+			height: 100%;
+		}
 	}
 
 	&__menu-item {
@@ -81,6 +89,19 @@ $name: header;
 		display: block;
 		color: white;
 		border-bottom: 2px solid transparent;
+	}
+
+	&__toggle-wrap {
+		position: absolute;
+		top: 0;
+		right: 0;
+		height: 100%;
+		display: flex;
+		align-items: center;
+
+		@include screen-md() {
+			display: none;
+		}
 	}
 
 	&_collapse {

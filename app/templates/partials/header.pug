@@ -1,4 +1,5 @@
 include ../components/logo
+include ../components/toggle
 
 // HEADER
 header.header
@@ -20,3 +21,6 @@ header.header
 							else
 								a.header__menu-link(href= val.link)
 									span.header__menu-text= val.name
+
+	.header__toggle-wrap
+		+toggle
