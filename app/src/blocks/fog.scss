@@ -20,4 +20,8 @@ $name: fog;
 		background: darken($color-main, 35%);
 		opacity: .93;
 	}
+
+	&_z_less {
+		z-index: 30;
+	}
 }

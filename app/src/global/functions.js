@@ -23,6 +23,7 @@ function toggleBodyScroll(noscroll) {
 	var
 		$body = $('body'),
 		$header = $('.header'),
+		$toggle = $('.header__toggle-wrap .toggle'),
 		noScrollClass = 'noscroll',
 		scrollWidth = getScrollbarWidth();
 
@@ -31,11 +32,13 @@ function toggleBodyScroll(noscroll) {
 			.css('padding-right', '')
 			.removeClass(noScrollClass);
 		$header.css('padding-right', '');
+		$toggle.css('padding-right', '');
 	} else {
 		$body
 			.css('padding-right', scrollWidth)
 			.addClass(noScrollClass);
 		$header.css('padding-right', scrollWidth);
+		$toggle.css('padding-right', scrollWidth);
 	}
 }
 /* ========== */

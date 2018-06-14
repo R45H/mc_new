@@ -52,12 +52,20 @@ $name: header;
 	}
 
 	&__menu-link {
-		font-size: 2.1rem;
+		font-size: 1.8rem;
+		padding: 2rem 1.3rem;
 		text-transform: uppercase;
-		padding: 2rem;
 		height: 100%;
 		display: flex;
 		align-items: center;
+
+		@include screen-lg {
+			font-size: 2.1rem;
+		}
+
+		@include screen-xl() {
+			padding: 2rem;
+		}
 
 		&:hover {
 
@@ -98,6 +106,7 @@ $name: header;
 		height: 100%;
 		display: flex;
 		align-items: center;
+		z-index: 80;
 
 		@include screen-md() {
 			display: none;

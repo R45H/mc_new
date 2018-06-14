@@ -1,0 +1,14 @@
+// ASIDE
+aside.aside
+
+	ul.aside__list
+
+		each val in g_menu
+			li.aside__item
+
+				if val.link === page.link
+					span.aside__link
+						span.aside__text= val.name
+				else
+					a.aside__link(href= val.link)
+						span.aside__text= val.name

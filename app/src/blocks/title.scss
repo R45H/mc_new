@@ -100,10 +100,18 @@ $name: title;
 	}
 
 	&_lg {
-		font-size: 5.6rem;
+		font-size: 4.5rem;
+
+		@include screen-sm() {
+			font-size: 5.6rem;
+		}
 	}
 
 	&_xl {
-		font-size: 7.4rem;
+		font-size: 5rem;
+
+		@include screen-sm() {
+			font-size: 7.4rem;
+		}
 	}
 }
