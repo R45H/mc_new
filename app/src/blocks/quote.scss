@@ -37,7 +37,7 @@ $name: quote;
 	}
 
 	&__content {
-		padding: 10rem 0;
+		padding: 5rem 0 2rem;
 		text-align: right;
 		position: relative;
 
@@ -46,7 +46,7 @@ $name: quote;
 			font-family: $font-system;
 			font-size: 10rem;
 			position: absolute;
-			top: 9rem;
+			top: 5rem;
 			left: 0;
 			line-height: .8;
 			color: white;
@@ -69,6 +69,14 @@ $name: quote;
 
 	&__author {
 		color: black;
+		margin-bottom: 1rem;
+		font-weight: bold;
+	}
+
+	&__desc {
+		font-style: italic;
+		color: black;
+		font-size: 2rem;
 	}
 
 	&_simple {

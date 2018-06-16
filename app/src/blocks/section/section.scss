@@ -13,7 +13,7 @@ $name: section;
 	}
 
 	&__desc {
-		color: $color-darkgray;
+		color: $color-light;
 		text-transform: uppercase;
 		font-size: 1.9rem;
 	}
@@ -221,6 +221,15 @@ $name: section;
 		justify-content: center;
 	}
 
+	&_space_header-2x {
+		padding-top: $height-header * 2;
+		padding-bottom: $height-header * 2;
+	}
+
+	&_space-top_header-2x {
+		padding-top: $height-header * 2;
+	}
+
 	&_space-bot_header-2x {
 		padding-bottom: $height-header * 2;
 	}
@@ -265,6 +274,7 @@ $name: section;
 	}
 
 	&_fog_dark,
+	&_fog_darker,
 	&_fog_light {
 
 		&::before {
@@ -281,6 +291,13 @@ $name: section;
 
 		&::before {
 			background: rgba(40, 40, 40, .6);
+		}
+	}
+
+	&_fog_darker {
+
+		&::before {
+			background: rgba(40, 40, 40, .9);
 		}
 	}
 

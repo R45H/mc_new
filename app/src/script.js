@@ -29,6 +29,9 @@ $(function() {
 	(function() {
 		//=require 'blocks/aside/aside.js'
 	}());
+	(function() {
+		//=require 'blocks/scroll.js'
+	}());
 	/* Blocks will be inserted here */
 });
 

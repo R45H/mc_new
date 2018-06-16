@@ -4,7 +4,7 @@ include ../mixins/list
 include ../components/rate
 include ../components/review
 
-.section.section_up.section_full.section_valign_center.section_fog_dark(style='background-image: url(img/content/section/07.jpg);')
+.section.section_up.section_full.section_valign_center.section_fog_dark.section_space-top_header-2x.section_space-bot_2x(style='background-image: url(img/content/section/07.jpg);')
 	.container.text-center
 		.main__space-bot-2x
 			h1.title.title_lg
@@ -21,10 +21,10 @@ include ../components/review
 			.col-md-10.offset-md-1
 
 				.text-center.main__space-bot
-					h2.title.title_tight.title_color_main Что это?
+					h2.title.title_lg.title_tight.title_color_main Что это?
 
 				.main__space-bot
-
+					.info.info_strong
 						p Это не тренинг личностного роста и даже не просто программа о том, как легко знакомиться и строить крепкие отношения с классными девушками!
 						p
 							b= '«Лига Справедливости» не похожа ни на один банальный пикап тренинг или программу по соблазнению девушек от «а» до «я». '
@@ -52,26 +52,26 @@ include ../components/review
 			.col-md-10.col-lg-8
 				.video(data-id="Y_NjFah58LM")
 
-.section.section_space_2x.section_fog_dark.section_line_before(style='background-image: url(img/content/section/04.jpg);')
+.section.section_space_2x.section_fog_darker.section_line_before(style='background-image: url(img/content/section/04.jpg);')
 	.container
 		.text-center
-			h2.title
+			h2.title.title_lg
 				span.mark Участники
 
 	.section__next.section__next_center
 
 .section.section_space-top_4x.section_space-bot_2x
 	.container
-		.row
+		.row.grid-line
 
 			each val in member
-				.col-6.col-sm-4.col-md-3.main__space-bot-2x
+				.col-6.col-sm-4.col-md-3.main__space-bot-2x-inner.grid-line__item
 					+member(val)
 
 .section.section_space_none
 	+review(review_3)(class='review_dark')
 
-.section.section_space_2x.section_fog_dark(style='background-image: url(img/content/section/04.jpg);')
+.section.section_space_2x.section_fog_darker(style='background-image: url(img/content/section/04.jpg);')
 	.container
 
 		.row.justify-content-center

@@ -11,7 +11,7 @@ include ../mixins/simple-list
 				.arrow.main__space-bot
 				+banner
 
-.section.section_space_2x.section_fog_dark(style='background-image: url(img/content/section/04.jpg);')
+.section.section_space_2x.section_fog_darker(style='background-image: url(img/content/section/04.jpg);')
 	.container
 		.row.justify-content-center
 			.col-md-10.col-lg-9.col-xl-8
@@ -30,7 +30,7 @@ include ../mixins/simple-list
 					span.mark.mark_color_main бесплатную консультацию.
 				p.title.title_xs.title_color_white.title_lower Целых 40-минут мы один на один будем разбираться с твоей проблемой, найдем причину твоих неудач, ты получишь четкое руководство как решить ту или иную проблему, чтобы ты видел в каком направлении тебе нужно двигаться.
 
-.section.section_color_main.section_space-top_2x
+.section.section_color_main.section_space-bot_none
 	.container
 		.row
 			.col-sm-4.offset-sm-1.order-sm-last.main__space-bot
@@ -48,19 +48,19 @@ include ../mixins/simple-list
 				.col-sm-6.col-md-5.main__space-bot
 					+simple-list(val, i + 1)
 
-.section.section_space_4x.section_fog_dark.section_question(style='background-image: url(img/content/section/04.jpg);')
+.section.section_space-top_4x.section_space-bot_2x.section_fog_darker.section_question(style='background-image: url(img/content/section/04.jpg);')
 	.container
 
 		.section__clouds
 
 		.row.justify-content-center
-			.col-sm-10.col-md-8.col-lg-7.text-center
-				h2.title.title_color_white.main__space-bot
+			.col-sm-10.col-md-8.col-lg-6.text-center
+				h2.title.title_sm.title_color_white.main__space-bot-half
 					span.mark= 'Я ничего не слышал об артуре, можно ли ему доверять?'
 
-				.arrow.main__space-bot
+				.arrow.main__space-bot-half
 
-				h3.title.title_lower.title_color_white Послушай, что говорят сами парни о своей жизни после того, как узнали «Принципы Артура»
+				h3.title.title_sm.title_lower.title_color_white Послушай, что говорят сами парни о своей жизни после того, как узнали «Принципы Артура»
 
 .section.section_space_none
 	+review(review_2)

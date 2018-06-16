@@ -24,7 +24,7 @@ $name: list;
 			margin-bottom: 0;
 			flex: none;
 			align-self: flex-start;
-			width: 10%;
+			width: 7%;
 		}
 	}
 
@@ -45,6 +45,7 @@ $name: list;
 
 		@include screen-md() {
 			text-align: left;
+			width: 47%;
 		}
 	}
 
@@ -80,6 +81,7 @@ $name: list;
 
 				@include screen-md() {
 					text-align: center;
+					width: 100%;
 				}
 			}
 		}

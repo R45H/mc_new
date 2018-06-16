@@ -1,0 +1,81 @@
+$name: grid-line;
+
+.#{$name} {
+	
+	&__item {
+		position: relative;
+
+		&::after {
+			content: '';
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			width: 2px;
+			background: $color-gray;
+		}
+
+		&:nth-child(2n) {
+
+			&::after {
+				display: none;
+
+				@include screen-sm() {
+					display: block;
+				}
+			}
+		}
+
+		&:nth-child(3n) {
+
+			&::after {
+
+				@include screen-sm() {
+					display: none;
+				}
+
+				@include screen-md() {
+					display: block;
+				}
+			}
+		}
+
+		&:nth-child(4n) {
+
+			&::after {
+
+				@include screen-md() {
+					display: none;
+				}
+			}
+		}
+
+		&:nth-last-child(1),
+		&:nth-last-child(2) {
+
+			&::after {
+				bottom: 8rem;
+			}
+		}
+
+		&:nth-last-child(3) {
+
+			&::after {
+
+				@include screen-sm() {
+					bottom: 8rem;
+				}
+			}
+		}
+
+		&:nth-last-child(4) {
+
+			&::after {
+
+				@include screen-md() {
+					bottom: 8rem;
+				}
+			}
+		}
+	}
+}
