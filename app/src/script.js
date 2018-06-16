@@ -32,6 +32,9 @@ $(function() {
 	(function() {
 		//=require 'blocks/scroll.js'
 	}());
+	(function() {
+		//=require 'blocks/video-inner/video-inner.js'
+	}());
 	/* Blocks will be inserted here */
 });
 

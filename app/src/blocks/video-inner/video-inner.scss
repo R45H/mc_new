@@ -1,0 +1,19 @@
+$name: video-inner;
+
+.#{$name} {
+	width: 100%;
+	padding-bottom: 56%;
+	position: relative;
+
+	&__i {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	&__item {
+
+	}
+}

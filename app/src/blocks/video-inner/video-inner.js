@@ -1,0 +1,1 @@
+$('.video-inner__item').mediaelementplayer();
