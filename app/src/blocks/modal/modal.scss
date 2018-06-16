@@ -131,7 +131,6 @@ $name: modal;
 		&_first {
 			background: url($path + 'img/content/modal.jpg') no-repeat center / cover;
 			padding-bottom: 100%;
-			filter: grayscale(1);
 
 			@include screen-sm() {
 				padding-bottom: 50%;

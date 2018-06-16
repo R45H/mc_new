@@ -13,17 +13,18 @@ mixin review(data)
 
 							.review__img-wrap
 								.review__img(
-									style='background-image: url(' + val.img + ');'
+									style='background-image: url(' + (val.img || 'img/content/no-photo.png') + ');'
 									role='img'
-									aria-label= val.name
-									title= val.name
+									aria-label= val.img ? val.name : 'Нет фото'
+									title= val.img ? val.name : 'Нет фото'
 								)
 
-							a.link.review__link(
-								href= val.link
-								target='_blank'
-								rel='nofollow'
-							)= val.link_text
+							if val.link
+								a.link.review__link(
+									href= val.link
+									target='_blank'
+									rel='nofollow'
+								)= val.link_text
 
 						.review__right
 							.title.review__title= val.name

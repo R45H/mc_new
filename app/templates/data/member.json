@@ -1,124 +1,172 @@
 {
 	"member": [
 		{
-			"img": "img/content/quote.jpg",
-			"name": "Максим Ленников",
-			"link": "http://vk.com/id139478577",
-			"link_text": "vk.com/id139478577"
+			"link": "https://vk.com/id139478577",
+			"link_text": "vk.com/id139478577",
+			"img": "img/content/member/01.jpg",
+			"name": "Максим Ленников"
 		},
 		{
-			"img": "img/content/quote.jpg",
-			"name": "Максим Ленников",
-			"link": "http://vk.com/id139478577",
-			"link_text": "vk.com/id139478577"
+			"link": "https://vk.com/id310341174",
+			"link_text": "vk.com/id310341174",
+			"img": "img/content/member/02.jpg",
+			"name": "Кирилл Довыдовский"
 		},
 		{
-			"img": "img/content/quote.jpg",
-			"name": "Максим Ленников",
-			"link": "http://vk.com/id139478577",
-			"link_text": "vk.com/id139478577"
+			"link": "https://vk.com/vakvadim",
+			"link_text": "vk.com/vakvadim",
+			"img": "img/content/member/03.jpg",
+			"name": "Вадим Вак"
 		},
 		{
-			"img": "img/content/quote.jpg",
-			"name": "Максим Ленников",
-			"link": "http://vk.com/id139478577",
-			"link_text": "vk.com/id139478577"
+			"link": "https://vk.com/id246863764",
+			"link_text": "vk.com/id246863764",
+			"img": "img/content/member/04.jpg",
+			"name": "Матвей Башмаков"
 		},
 		{
-			"img": "img/content/quote.jpg",
-			"name": "Максим Ленников",
-			"link": "http://vk.com/id139478577",
-			"link_text": "vk.com/id139478577"
+			"link": "https://vk.com/id116585607",
+			"link_text": "vk.com/id116585607",
+			"img": "",
+			"name": "Владимир Фунтиков"
 		},
 		{
-			"img": "img/content/quote.jpg",
-			"name": "Максим Ленников",
-			"link": "http://vk.com/id139478577",
-			"link_text": "vk.com/id139478577"
+			"link": "https://vk.com/id14731753",
+			"link_text": "vk.com/id14731753",
+			"img": "img/content/member/06.jpg",
+			"name": "Александр Кудрявцев"
 		},
 		{
-			"img": "img/content/quote.jpg",
-			"name": "Максим Ленников",
-			"link": "http://vk.com/id139478577",
-			"link_text": "vk.com/id139478577"
+			"link": "https://vk.com/id192863420",
+			"link_text": "vk.com/id192863420",
+			"img": "img/content/member/07.jpg",
+			"name": "Сезым Жарликов"
 		},
 		{
-			"img": "img/content/quote.jpg",
-			"name": "Максим Ленников",
-			"link": "http://vk.com/id139478577",
-			"link_text": "vk.com/id139478577"
+			"link": "https://vk.com/nikolaix",
+			"link_text": "vk.com/nikolaix",
+			"img": "img/content/member/08.jpg",
+			"name": "Николай Усмендеев"
 		},
 		{
-			"img": "img/content/quote.jpg",
-			"name": "Максим Ленников",
-			"link": "http://vk.com/id139478577",
-			"link_text": "vk.com/id139478577"
+			"link": "https://vk.com/hakkai",
+			"link_text": "vk.com/hakkai",
+			"img": "img/content/member/09.jpg",
+			"name": "Антон Михин"
 		},
 		{
-			"img": "img/content/quote.jpg",
-			"name": "Максим Ленников",
-			"link": "http://vk.com/id139478577",
-			"link_text": "vk.com/id139478577"
+			"link": "https://vk.com/neposedi4",
+			"link_text": "vk.com/neposedi4",
+			"img": "img/content/member/10.jpg",
+			"name": "Александр Першиков"
 		},
 		{
-			"img": "img/content/quote.jpg",
-			"name": "Максим Ленников",
-			"link": "http://vk.com/id139478577",
-			"link_text": "vk.com/id139478577"
+			"link": "https://vk.com/id368214319",
+			"link_text": "vk.com/id368214319",
+			"img": "img/content/member/11.jpg",
+			"name": "Семен Белавин"
 		},
 		{
-			"img": "img/content/quote.jpg",
-			"name": "Максим Ленников",
-			"link": "http://vk.com/id139478577",
-			"link_text": "vk.com/id139478577"
+			"link": "https://vk.com/id70400477",
+			"link_text": "vk.com/id70400477",
+			"img": "img/content/member/12.jpg",
+			"name": "Владимир Блинов"
 		},
 		{
-			"img": "img/content/quote.jpg",
-			"name": "Максим Ленников",
-			"link": "http://vk.com/id139478577",
-			"link_text": "vk.com/id139478577"
+			"link": "https://vk.com/slavne_voene",
+			"link_text": "vk.com/slavne_voene",
+			"img": "img/content/member/13.jpg",
+			"name": "Василий Степаник"
 		},
 		{
-			"img": "img/content/quote.jpg",
-			"name": "Максим Ленников",
-			"link": "http://vk.com/id139478577",
-			"link_text": "vk.com/id139478577"
+			"link": "https://vk.com/id83631108",
+			"link_text": "vk.com/id83631108",
+			"img": "img/content/member/14.jpg",
+			"name": "Александр Семёнов"
 		},
 		{
-			"img": "img/content/quote.jpg",
-			"name": "Максим Ленников",
-			"link": "http://vk.com/id139478577",
-			"link_text": "vk.com/id139478577"
+			"link": "https://vk.com/id159763457",
+			"link_text": "vk.com/id159763457",
+			"img": "img/content/member/15.jpg",
+			"name": "Стас Шаламов"
 		},
 		{
-			"img": "img/content/quote.jpg",
-			"name": "Максим Ленников",
-			"link": "http://vk.com/id139478577",
-			"link_text": "vk.com/id139478577"
+			"link": "https://vk.com/id90327711",
+			"link_text": "vk.com/id90327711",
+			"img": "",
+			"name": "Тамерлан Вольхин"
 		},
 		{
-			"img": "img/content/quote.jpg",
-			"name": "Максим Ленников",
-			"link": "http://vk.com/id139478577",
-			"link_text": "vk.com/id139478577"
+			"link": "https://vk.com/elek3k_2012",
+			"link_text": "vk.com/elek3k_2012",
+			"img": "img/content/member/17.jpg",
+			"name": "Сабыржан Тур"
 		},
 		{
-			"img": "img/content/quote.jpg",
-			"name": "Максим Ленников",
-			"link": "http://vk.com/id139478577",
-			"link_text": "vk.com/id139478577"
+			"link": "https://vk.com/yric93",
+			"link_text": "vk.com/yric93",
+			"img": "img/content/member/18.jpg",
+			"name": "Ярослав Кондратьев"
 		},
 		{
-			"img": "img/content/quote.jpg",
-			"name": "Максим Ленников",
-			"link": "http://vk.com/id139478577",
-			"link_text": "vk.com/id139478577"
+			"link": "https://vk.com/id95617919",
+			"link_text": "vk.com/id95617919",
+			"img": "img/content/member/19.jpg",
+			"name": "Саша Джинибалаев"
 		},
 		{
-			"img": "img/content/quote.jpg",
-			"name": "Максим Ленников",
-			"link": "http://vk.com/id139478577",
-			"link_text": "vk.com/id139478577"
+			"link": "https://vk.com/ramis5555",
+			"link_text": "vk.com/ramis5555",
+			"img": "img/content/member/20.jpg",
+			"name": "Рамис Мухутдинов"
+		},
+		{
+			"link": "https://vk.com/id103667178",
+			"link_text": "vk.com/id103667178",
+			"img": "img/content/member/21.jpg",
+			"name": "Аскер Баембаев"
+		},
+		{
+			"link": "https://vk.com/id311287841",
+			"link_text": "vk.com/id311287841",
+			"img": "img/content/member/22.jpg",
+			"name": "Кирилл Кубов"
+		},
+		{
+			"link": "https://vk.com/id133179293",
+			"link_text": "vk.com/id133179293",
+			"img": "img/content/member/23.jpg",
+			"name": "Николай Червоненко"
+		},
+		{
+			"link": "https://vk.com/pavelpozdnyakov1",
+			"link_text": "vk.com/pavelpozdnyakov1",
+			"img": "img/content/member/24.jpg",
+			"name": "Павел Поздняков"
+		},
+		{
+			"link": "https://vk.com/serjdv",
+			"link_text": "vk.com/serjdv",
+			"img": "img/content/member/25.jpg",
+			"name": "Сергей Давыдоф"
+		},
+		{
+			"link": "https://vk.com/den2x2",
+			"link_text": "vk.com/den2x2",
+			"img": "img/content/member/26.jpg",
+			"name": "Даниил Бучинский"
+		},
+		{
+			"link": "https://vk.com/ayaz_galiev",
+			"link_text": "vk.com/ayaz_galiev",
+			"img": "img/content/member/27.jpg",
+			"name": "Аяз Галиев"
+		},
+		{
+			"link": "https://vk.com/id358140536",
+			"link_text": "vk.com/id358140536",
+			"img": "",
+			"name": "Руслан"
 		}
 	]
 }
