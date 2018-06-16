@@ -1,7 +1,8 @@
 $name: social;
 
 .#{$name} {
-	display: inline-block;
+	display: inline-flex;
+	flex-wrap: wrap;
 	font-size: 20px;
 
 	@include screen-sm() {
