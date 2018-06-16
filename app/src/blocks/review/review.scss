@@ -87,28 +87,40 @@ $name: review;
 	}
 
 	&__text {
-		padding: 0 6rem;
 		position: relative;
+
+		@include screen-sm() {
+			padding: 0 6rem;
+		}
 
 		&::before,
 		&::after {
-			font-family: $font-system;
-			color: $color-main;
-			font-size: 8rem;
-			font-weight: bold;
-			line-height: .8;
-			position: absolute;
-			top: 0;
+
+			@include screen-sm() {
+				font-family: $font-system;
+				color: $color-main;
+				font-size: 8rem;
+				font-weight: bold;
+				line-height: .8;
+				position: absolute;
+				top: 0;
+			}
 		}
 
 		&::before {
-			content: '\201C';
-			left: 0;
+
+			@include screen-sm() {
+				content: '\201C';
+				left: 0;
+			}
 		}
 
 		&::after {
-			content: '\201D';
-			right: 0;
+
+			@include screen-sm() {
+				content: '\201D';
+				right: 0;
+			}
 		}
 	}
 
@@ -122,10 +134,12 @@ $name: review;
 		list-style-type: none;
 		text-align: center;
 		background: $color-gray;
+		display: flex !important;
+		flex-wrap: wrap;
+		justify-content: center;
 
 		li {
 			display: inline-block;
-			margin-bottom: -7px;
 			padding: 1.5em .3em;
 			cursor: pointer;
 

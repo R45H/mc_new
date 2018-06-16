@@ -2,17 +2,26 @@ $name: social;
 
 .#{$name} {
 	display: inline-block;
-	font-size: 2.6rem;
+	font-size: 20px;
+
+	@include screen-sm() {
+		font-size: 2.6rem;
+	}
 
 	&__link {
 		@extend %transition;
 		color: black;
-		width: 6rem;
-		height: 4rem;
+		width: 48px;
+		height: 32px;
 		display: inline-flex;
 		align-items: center;
 		justify-content: center;
 		position: relative;
+
+		@include screen-sm() {
+			width: 6rem;
+			height: 4rem;
+		}
 
 		&::after {
 			content: '';

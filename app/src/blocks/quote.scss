@@ -68,9 +68,18 @@ $name: quote;
 	}
 
 	&__author {
+		display: inline-block;
 		color: black;
-		margin-bottom: 1rem;
+		margin-bottom: 1.5rem;
 		font-weight: bold;
+
+		&:hover {
+			color: $color-main;
+		}
+
+		&:active {
+			color: darken($color-main, 10%);
+		}
 	}
 
 	&__desc {
