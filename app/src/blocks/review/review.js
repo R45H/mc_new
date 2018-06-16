@@ -26,7 +26,7 @@ $block.each(function() {
 		nextArrow: '<div class="' + classArrow + ' ' + classNextArrow + '"></div>',
 		adaptiveHeight: true,
 		autoplay: true,
-		autoplaySpeed: 5000,
+		autoplaySpeed: 20000,
 		pauseOnDotsHover: true,
 		responsive: [
 			{
@@ -37,4 +37,21 @@ $block.each(function() {
 			}
 		]
 	});
+
+	if (!isSliderOnScreen($slider)) {
+		$slider.slick('slickPause');
+	}
+
+	$(window).on('scroll resize', function() {
+
+		if (isSliderOnScreen($slider)) {
+			$slider.slick('slickPlay');
+		} else {
+			$slider.slick('slickPause');
+		}
+	});
 });
+
+function isSliderOnScreen($slider) {
+	return $(document).scrollTop() + $(window).height() > $slider.offset().top && $(document).scrollTop() - $slider.offset().top < $slider.height();
+}

@@ -1,6 +1,6 @@
 {
 	"social_2": [
-		{"link": "#", "name": "vk"},
-		{"link": "#", "name": "envelope-o"}
+		{"link": "https://vk.com/artur_vozniak", "name": "vk"},
+		{"link": "artur.vozniak@gmail.com", "name": "envelope-o"}
 	]
 }

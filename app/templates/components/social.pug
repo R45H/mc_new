@@ -4,8 +4,8 @@ mixin social(data)
 		each val in data
 			a.social__link(
 				class= 'social__link_' + val.name
-				href= val.link
-				target='_blank'
-				rel='nofollow'
+				href= val.name === 'envelope-o' ? 'mailto:' + val.link : val.link
+				target= val.name === 'envelope-o' ? null : '_blank'
+				rel= val.name === 'envelope-o' ? null : 'nofollow'
 			)
 				i.fa(class= 'fa-' + val.name).social__icon

@@ -1,7 +1,7 @@
 {
 	"social": [
-		{"link": "#", "name": "vk"},
-		{"link": "#", "name": "envelope-o"},
-		{"link": "#", "name": "instagram"}
+		{"link": "https://vk.com/artur_vozniak", "name": "vk"},
+		{"link": "artur.vozniak@gmail.com", "name": "envelope-o"},
+		{"link": "https://www.instagram.com/arturvozniak_mv/?hl=ru", "name": "instagram"}
 	]
 }

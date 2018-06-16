@@ -54,7 +54,7 @@ $name: grid-line;
 		&:nth-last-child(2) {
 
 			&::after {
-				bottom: 8rem;
+				bottom: 4rem;
 			}
 		}
 
@@ -63,7 +63,7 @@ $name: grid-line;
 			&::after {
 
 				@include screen-sm() {
-					bottom: 8rem;
+					bottom: 4rem;
 				}
 			}
 		}
@@ -73,7 +73,7 @@ $name: grid-line;
 			&::after {
 
 				@include screen-md() {
-					bottom: 8rem;
+					bottom: 4rem;
 				}
 			}
 		}
