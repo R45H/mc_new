@@ -6,6 +6,26 @@ $name: review;
 	flex-direction: column;
 	overflow: hidden;
 
+	.slick-list {
+		margin-left: -15px;
+		margin-right: -15px;
+
+		@include screen-sm() {
+			margin-left: 0;
+			margin-right: 0;
+		}
+	}
+
+	.slick-slide {
+		margin-left: 15px;
+		margin-right: 15px;
+
+		@include screen-sm() {
+			margin-left: 0;
+			margin-right: 0;
+		}
+	}
+
 	&__wrap {
 		position: relative;
 	}
