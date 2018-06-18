@@ -98,7 +98,7 @@ $name: section;
 	&__hand {
 		background: url($path + 'img/icons/hand.svg') no-repeat center / contain;
 		position: absolute;
-		bottom: -8rem;
+		bottom: -13rem;
 		right: 4rem;
 		height: 0;
 		width: 20%;
@@ -106,9 +106,15 @@ $name: section;
 
 		@include screen-sm() {
 			right: -5rem;
+			bottom: -14rem;
 		}
 
 		@include screen-md() {
+			bottom: auto;
+			top: -7rem;
+		}
+
+		@include screen-lg() {
 			bottom: auto;
 			top: -8rem;
 		}
