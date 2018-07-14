@@ -330,4 +330,36 @@ $name: section;
 		background-image: url($path + 'img/icons/gobbler.png');
 		background-repeat: repeat;
 	}
+
+	&_bg_1 {
+		background-position: left;
+
+		@include screen-md() {
+			background-position: 55% 50%;
+		}
+
+		@include screen-lg() {
+			background-position: center;
+		}
+	}
+
+	&_bg_2 {
+		background-position: left;
+
+		@include screen-md() {
+			background-position: 75% 0;
+		}
+	}
+
+	&_bg_3 {
+		background-position: left;
+
+		@include screen-sm() {
+			background-position: 10% 30%;
+		}
+
+		@include screen-md() {
+			background-position: 75% 30%;
+		}
+	}
 }
