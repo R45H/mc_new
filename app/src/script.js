@@ -35,6 +35,9 @@ $(function() {
 	(function() {
 		//=require 'blocks/video-inner/video-inner.js'
 	}());
+	(function() {
+		//=require 'blocks/radio/radio.js'
+	}());
 	/* Blocks will be inserted here */
 });
 

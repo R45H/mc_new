@@ -3,6 +3,7 @@ include ../mixins/dots
 include ../mixins/list
 include ../mixins/simple-list
 include ../mixins/member
+include ../mixins/radio
 include ../components/logo
 include ../components/social
 include ../components/quote
@@ -150,6 +151,13 @@ include ../components/rate
 				title: 'textarea.input',
 				textarea: true
 			})
+
+	.row.main__separator
+
+		.col-sm-3
+
+			each val in radio
+				+radio(val)
 
 	.row.main__separator.main__black
 
