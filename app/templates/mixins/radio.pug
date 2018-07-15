@@ -1,5 +1,5 @@
 mixin radio(data)
-	.radio
+	.radio(class= attributes.class)
 
 		each val, i in data.items
 			.radio__item
@@ -8,6 +8,6 @@ mixin radio(data)
 					name= data.name
 					id= data.name + '-' + (i + 1)
 					value= val.text
-					data-score= val.score
+					data-score= val.score || null
 				)
 				label.radio__label(for= data.name + '-' + (i + 1))= val.text

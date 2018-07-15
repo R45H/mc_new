@@ -36,6 +36,9 @@ $(function() {
 		//=require 'blocks/video-inner/video-inner.js'
 	}());
 	(function() {
+		//=require 'blocks/question/question.js'
+	}());
+	(function() {
 		//=require 'blocks/radio/radio.js'
 	}());
 	/* Blocks will be inserted here */

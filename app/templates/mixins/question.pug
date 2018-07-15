@@ -1,0 +1,11 @@
+include ../mixins/radio
+
+mixin question(data)
+	.question(class= attributes.class)
+		.title.title_tight.title_sm.title_lower.main__space-bot.question__title= data.title
+
+		.question__radio-wrap.main__space-bot
+			each val in data.radio
+				+radio(val)(class='question__radio')
+
+		button.btn.btn_sm.btn_disabled.question__btn Дальше

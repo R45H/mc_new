@@ -32,4 +32,20 @@ $name: btn;
 		padding-left: 2.6em;
 		padding-right: 2.6em;
 	}
+
+	&_sm {
+		padding-top: .65em;
+		padding-bottom: .65em;
+	}
+
+	&_disabled {
+		background-color: $color-darkgray;
+		cursor: default;
+
+		&:hover,
+		&:focus,
+		&:active {
+			background-color: $color-darkgray;
+		}
+	}
 }

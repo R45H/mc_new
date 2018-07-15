@@ -4,6 +4,7 @@ include ../mixins/list
 include ../mixins/simple-list
 include ../mixins/member
 include ../mixins/radio
+include ../mixins/question
 include ../components/logo
 include ../components/social
 include ../components/quote
@@ -102,6 +103,12 @@ include ../components/rate
 		.col-sm-3.main__space-col
 			.btn.btn_wide .btn.btn_wide
 
+		.col-sm-3.main__space-col
+			.btn.btn_sm .btn.btn_sm
+
+		.col-sm-3.main__space-col
+			.btn.btn_disabled .btn.btn_disabled
+
 	.row.main__separator
 
 		.col-sm-3
@@ -158,6 +165,11 @@ include ../components/rate
 
 			each val in radio
 				+radio(val)
+
+	.row.main__separator
+
+		.col-12
+			+question(question[0])
 
 	.row.main__separator.main__black
 
