@@ -1,0 +1,36 @@
+$name: num;
+
+.#{$name} {
+	display: flex;
+	flex-wrap: wrap;
+	margin: -5px;
+
+	&__item {
+		transition: .5s linear;
+		margin: 5px;
+		line-height: 1;
+		width: 2em;
+		height: 2em;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		cursor: default;
+		user-select: none;
+		border: 2px solid $color-darkgray;
+		background-color: $color-gray;
+		color: $color-darkgray;
+
+		&_complete {
+			color: white;
+			background-color: $color-light;
+			border-color: $color-main;
+		}
+
+		&_active {
+			color: white;
+			background-color: $color-main;
+			border-color: $color-main;
+			box-shadow: 0 0 0 2px $color-main;
+		}
+	}
+}

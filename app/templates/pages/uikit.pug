@@ -5,6 +5,7 @@ include ../mixins/simple-list
 include ../mixins/member
 include ../mixins/radio
 include ../mixins/question
+include ../mixins/num
 include ../components/logo
 include ../components/social
 include ../components/quote
@@ -160,7 +161,10 @@ include ../components/rate
 			})
 
 	.row.main__separator
+		.col-sm-6
+			+num(6, 3)
 
+	.row.main__separator
 		.col-sm-3
 
 			each val in radio

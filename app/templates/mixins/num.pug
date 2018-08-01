@@ -1,0 +1,9 @@
+mixin num(count, active)
+	.num(class= attributes.class)
+
+		- for (var i = 1; i <= count; i++) {
+			.num__item(
+				class= (i < active) ? 'num__item_complete' : ''
+				class= (i === active) ? 'num__item_active' : ''
+			)= i
+		-}
