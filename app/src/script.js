@@ -41,6 +41,9 @@ $(function() {
 	(function() {
 		//=require 'blocks/radio/radio.js'
 	}());
+	(function() {
+		//=require 'blocks/quiz/quiz.js'
+	}());
 	/* Blocks will be inserted here */
 });
 

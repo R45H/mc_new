@@ -1,0 +1,15 @@
+block vars
+
+doctype html
+html(lang="ru")
+	head
+		block head
+			include ../partials/head
+
+		title #{page.title} | #{global.name}
+	body
+		.wrapper
+			main.main
+				block content
+
+			// END OF VISIBLE CONTENT

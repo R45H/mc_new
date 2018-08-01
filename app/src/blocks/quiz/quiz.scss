@@ -1,0 +1,26 @@
+$name: quiz;
+
+.#{$name} {
+
+	&__section-test {
+		display: none;
+	}
+
+	&__section-end {
+		display: none;
+	}
+
+	&__question {
+
+		&_hidden {
+			display: none;
+		}
+	}
+
+	&__result {
+
+		&::after {
+			content: attr(data-result);
+		}
+	}
+}
