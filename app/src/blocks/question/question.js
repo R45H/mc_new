@@ -37,7 +37,3 @@ $block.each(function() {
 	});
 	/* ===== */
 });
-
-$block.on('ready.custom.question', function(target, score) {
-	console.log(score);
-});

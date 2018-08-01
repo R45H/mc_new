@@ -5,6 +5,7 @@ mixin question(data)
 		.title.title_tight.title_sm.title_lower.main__space-bot.question__title= data.title
 
 		.question__radio-wrap.main__space-bot
+
 			each val in data.radio
 				+radio(val)(class='question__radio')
 
