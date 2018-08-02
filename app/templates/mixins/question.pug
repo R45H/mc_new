@@ -1,7 +1,10 @@
 include ../mixins/radio
 
 mixin question(data)
-	.question(class= attributes.class)
+	.question(
+		class= attributes.class
+		data-img= data.img || null
+	)
 		.title.title_tight.title_sm.title_lower.main__space-bot.question__title= data.title
 
 		.question__radio-wrap.main__space-bot

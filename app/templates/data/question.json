@@ -2,6 +2,7 @@
 	"question": [
 		{
 			"title": "1. Когда ты видишь влюбленные парочки, о чем ты начинаешь думать?",
+			"img": "img/content/quiz/questions/01.jpg",
 			"radio": [
 				{
 					"name": "question-1",
@@ -16,6 +17,7 @@
 		},
 		{
 			"title": "2. Когда ты знакомишься или общаешься с понравившейся девушкой, ты сразу можешь признаться ей в заинтересованности?",
+			"img": "img/content/quiz/questions/02.jpg",
 			"radio": [
 				{
 					"name": "question-2",
@@ -30,6 +32,7 @@
 		},
 		{
 			"title": "3. Первая твоя мысль, когда девушка начинает смотреть на тебя и улыбаться?",
+			"img": "img/content/quiz/questions/03.jpg",
 			"radio": [
 				{
 					"name": "question-3",
@@ -44,6 +47,7 @@
 		},
 		{
 			"title": "4. На каком этапе общения девушки чаще всего теряют к тебе интерес?",
+			"img": "img/content/quiz/questions/04.jpg",
 			"radio": [
 				{
 					"name": "question-4",
@@ -60,6 +64,7 @@
 		},
 		{
 			"title": "5. Ты знаешь как правильно вести себя с девушками, но из-за внутреннего страха и дискомфорта по-прежнему ведешь себя неуверенно?",
+			"img": "img/content/quiz/questions/05.jpg",
 			"radio": [
 				{
 					"name": "question-5",
@@ -74,6 +79,7 @@
 		},
 		{
 			"title": "6. Почему ты не знакомишься?",
+			"img": "img/content/quiz/questions/06.jpg",
 			"radio": [
 				{
 					"name": "question-6",
@@ -91,6 +97,7 @@
 		},
 		{
 			"title": "7. Когда ты сравниваешь себя с окружающими людьми, то:",
+			"img": "img/content/quiz/questions/07.jpg",
 			"radio": [
 				{
 					"name": "question-7",
@@ -105,6 +112,7 @@
 		},
 		{
 			"title": "8. Твоё поведение, когда ты приходишь в новый коллектив?",
+			"img": "img/content/quiz/questions/08.jpg",
 			"radio": [
 				{
 					"name": "question-8",
@@ -119,6 +127,7 @@
 		},
 		{
 			"title": "9. Ты девственник?",
+			"img": "img/content/quiz/questions/09.jpg",
 			"radio": [
 				{
 					"name": "question-9",
@@ -133,6 +142,7 @@
 		},
 		{
 			"title": "10. Как ты думаешь, почему девушки тебе отказывают?",
+			"img": "img/content/quiz/questions/10.jpg",
 			"radio": [
 				{
 					"name": "question-10",
@@ -149,6 +159,7 @@
 		},
 		{
 			"title": "11. Как ты думаешь, чего тебе не хватает, чтобы начать нравиться девушкам?",
+			"img": "img/content/quiz/questions/11.jpg",
 			"radio": [
 				{
 					"name": "question-11",
@@ -165,6 +176,7 @@
 		},
 		{
 			"title": "12. Когда девушка тебе отказала при посторонних людях, что ты чувствуешь?",
+			"img": "img/content/quiz/questions/12.jpg",
 			"radio": [
 				{
 					"name": "question-12",
@@ -179,6 +191,7 @@
 		},
 		{
 			"title": "13. Ты часто получаешь отказы?",
+			"img": "img/content/quiz/questions/13.jpg",
 			"radio": [
 				{
 					"name": "question-13",
@@ -193,6 +206,7 @@
 		},
 		{
 			"title": "14. За последние 2 года у тебя было такое, что ты никак не мог забыть бывшую девушку и пытался вернуть ее назад?",
+			"img": "img/content/quiz/questions/14.jpg",
 			"radio": [
 				{
 					"name": "question-14",
@@ -208,6 +222,7 @@
 		},
 		{
 			"title": "15. Сколько лет ты пытаешься решить проблемы с девушками?",
+			"img": "img/content/quiz/questions/15.jpg",
 			"radio": [
 				{
 					"name": "question-15",
@@ -224,6 +239,7 @@
 		},
 		{
 			"title": "16. Насколько тебе легко познакомиться с понравившейся девушкой в общественном месте?",
+			"img": "img/content/quiz/questions/16.jpg",
 			"radio": [
 				{
 					"name": "question-16",
