@@ -1,6 +1,7 @@
 include ../components/rate
 include ../mixins/question
 include ../mixins/num
+include ../mixins/progressbar
 
 .quiz
 
@@ -23,10 +24,11 @@ include ../mixins/num
 		.section.section_space_2x
 			.container
 				.text-center
-					.title.title_tight.title_lg.main__space-bot-2x За 3 минуты этот уникальный тест расскажет о тебе больше, чем ты можешь себе представить!
+					h2.title.title_tight.title_lg.main__space-bot-2x За 3 минуты этот уникальный тест расскажет о тебе больше, чем ты можешь себе представить!
 
 				.info.info_strong.main__space-bot-2x
-					p Этот тест выходит за рамки общепринятого понимания мужской привлекательности, он нарушает все привычные теории экспертов пикапа и соблазнения, поэтому он обладает такой высокой точностью и способен выявлять самые скрытые проблемы.
+					.text-center
+						p Этот тест выходит за рамки общепринятого понимания мужской привлекательности, он нарушает все привычные теории экспертов пикапа и соблазнения, поэтому он обладает такой высокой точностью и способен выявлять самые скрытые проблемы.
 
 				.text-center.main__space-bot-2x
 					a.btn.btn_wide.quiz__start-btn(href='#') Начать тест
@@ -53,6 +55,18 @@ include ../mixins/num
 						class='quiz__question'
 						class= i ? 'quiz__question_hidden' : ''
 					)
+
+	.quiz__section-wait
+		.section.section_full.section_up.section_valign_center
+			.container.text-center
+				.row.justify-content-center
+					.col-md-11.col-lg-10.col-xl-9
+						+progressbar({
+							max: 50,
+							label: 'Загрузка результатов'
+						})(class='quiz__progressbar')
+						.quiz__end-trigger-wrap.main__space-top-2x-inner.main__space-bot-inner
+							button.btn.quiz__end-trigger Перейти к результатам теста:
 
 	.quiz__section-end
 		.section.section_up.section_full.section_valign_center.section_fog_darker.section_space_2x(style='background-image: url(img/content/section/04.jpg);')

@@ -3,11 +3,15 @@ var
 	$block = $('.' + classBlock),
 	$sectionStart = $block.find('.' + classBlock + '__section-start'),
 	$sectionTest = $block.find('.' + classBlock + '__section-test'),
+	$sectionWait = $block.find('.' + classBlock + '__section-wait'),
 	$sectionEnd = $block.find('.' + classBlock + '__section-end'),
 	$startBtn = $block.find('.' + classBlock + '__start-btn'),
 	$questions = $block.find('.' + classBlock + '__question'),
 	$result = $block.find('.' + classBlock + '__result'),
 	$num = $block.find('.' + classBlock + '__num'),
+	$progressbar = $block.find('.' + classBlock + '__progressbar'),
+	$endTriggerWrap = $block.find('.' + classBlock + '__end-trigger-wrap'),
+	$endTrigger = $block.find('.' + classBlock + '__end-trigger'),
 	numCount = $num.find('.num__item').length, // Количество пунктов нумерации
 	questionsCount = $questions.length, // Количество вопросов
 	scoreSum = 0, // Сумма всех баллов
@@ -82,8 +86,29 @@ $questions.one('ready.custom.question', function(event, score) {
 
 		$sectionTest.fadeOut(delay, function() {
 			$(this).css('display', '');
-			$sectionEnd.fadeIn(delay);
+
+			/* Появление секции с прогрессбаром */
+			$sectionWait.fadeIn(delay, function() {
+				setTimeout(function() {
+					startProgressbar($progressbar);
+				}, 5000);
+			});
+			/* ===== */
 		});
 	}
+});
+/* ===== */
+
+/* Появление кнопки при завершении прогрессбара */
+$progressbar.on('complete.progressbar', function() {
+	$endTriggerWrap.slideDown(delay);
+});
+/* ===== */
+
+/* Появление секции с результатами при клике на кнопку */
+$endTrigger.one('click', function() {
+	$sectionWait.fadeOut(delay, function() {
+		$sectionEnd.fadeIn(delay);
+	});
 });
 /* ===== */

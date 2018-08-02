@@ -6,6 +6,10 @@ $name: quiz;
 		display: none;
 	}
 
+	&__section-wait {
+		display: none;
+	}
+
 	&__section-end {
 		display: none;
 	}
@@ -15,6 +19,10 @@ $name: quiz;
 		&_hidden {
 			display: none;
 		}
+	}
+
+	&__end-trigger-wrap {
+		display: none;
 	}
 
 	&__result {
