@@ -2,4 +2,10 @@ $name: question;
 
 .#{$name} {
 
+	&__img {
+		display: block;
+		width: 100%;
+		padding-bottom: 56.25%;
+		background: no-repeat center / cover;
+	}
 }
