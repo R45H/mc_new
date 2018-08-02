@@ -142,3 +142,21 @@ function addIdHash(id) {
 	return id;
 }
 /* ========== */
+
+/* Сработка прогрессбара */
+function startProgressbar($block) {
+	var
+		val = $block.progressbar('value') || 0,
+		max = $block.attr('data-max');
+
+	$block.progressbar('value', val + 1);
+
+	if (val < max) {
+		setTimeout(function() {
+			startProgressbar($block);
+		}, 100);
+	} else {
+		$block.trigger('complete.progressbar');
+	}
+}
+/* ===== */

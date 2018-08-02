@@ -44,6 +44,9 @@ $(function() {
 	(function() {
 		//=require 'blocks/quiz/quiz.js'
 	}());
+	(function() {
+		//=require 'blocks/progressbar/progressbar.js'
+	}());
 	/* Blocks will be inserted here */
 });
 

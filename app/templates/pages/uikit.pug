@@ -6,6 +6,7 @@ include ../mixins/member
 include ../mixins/radio
 include ../mixins/question
 include ../mixins/num
+include ../mixins/progressbar
 include ../components/logo
 include ../components/social
 include ../components/quote
@@ -253,3 +254,10 @@ include ../components/rate
 	.row.main__separator
 		.col-3
 			+member(member[0])
+
+	.row.main__separator
+		.col-12
+			+progressbar({
+				max: 200,
+				label: 'Загрузка результатов'
+			})
