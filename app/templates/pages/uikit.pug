@@ -15,6 +15,7 @@ include ../components/quote_2
 include ../components/review
 include ../components/banner
 include ../components/rate
+include ../components/scale
 
 .container
 
@@ -278,4 +279,11 @@ include ../components/rate
 			+progressbar({
 				max: 200,
 				label: 'Загрузка результатов'
+			})
+
+	.row.main__separator
+		.col-sm-1
+			+scale({
+				text: 'Ты тут',
+				percent: 40
 			})

@@ -160,3 +160,18 @@ function startProgressbar($block) {
 	}
 }
 /* ===== */
+
+/* Установка процента у блока scale */
+function setScalePercent($target, val) {
+	var
+		$value = $target.find('.scale__value'),
+		$num = $target.find('.scale__num');
+
+	$value.css({
+		height: val + '%',
+		width: val + '%'
+	});
+
+	$num.text(val + '%');
+}
+/* ===== */

@@ -1,0 +1,6 @@
+mixin scale(data)
+	.scale(class= attributes.class)
+		.scale__wrap
+			.scale__value(style='height: ' + data.percent + '%; width: ' + data.percent + '%;')
+				.scale__num= data.percent + '%'
+				.scale__text= data.text
