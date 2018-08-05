@@ -17,7 +17,8 @@ var
 	questionsCount = $questions.length, // Количество вопросов
 	scoreSum = 0, // Сумма всех баллов
 	scoreAvg, // Средний показатель по набранным баллам
-	delay = 1000;
+	delay = 1000,
+	problemsCount = 0; // Количество проблем, на которые попал пользователь
 
 /* Добавление недостающих пунктов нумерации */
 while (numCount < questionsCount) {
@@ -61,9 +62,14 @@ $questions.one('ready.custom.question', function(event, score, result) {
 
 	scoreSum += +(score);
 
+	/* Отображение результата если попали на нужный ответ */
 	if (result) {
-		$('[data-result-target="' + result + '"]').addClass(classBlock + '__result_visible');
+		$('[data-result-target="' + result + '"]')
+			.addClass(classBlock + '__result_visible')
+			.find('.' + classBlock + '__problem-title')
+			.text('Проблема ' + ++problemsCount + ':');
 	}
+	/* ===== */
 
 	if ($next) {
 

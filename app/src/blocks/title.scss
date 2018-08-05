@@ -1,6 +1,7 @@
 $name: title;
 
 .#{$name} {
+	font-family: $font-main;
 	font-size: 3.7rem;
 	color: black;
 	text-transform: uppercase;
