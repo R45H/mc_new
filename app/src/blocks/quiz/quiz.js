@@ -5,8 +5,6 @@ var
 	$sectionTest = $block.find('.' + classBlock + '__section-test'),
 	$sectionWait = $block.find('.' + classBlock + '__section-wait'),
 	$sectionEnd = $block.find('.' + classBlock + '__section-end'),
-	$sectionBg = $block.find('.' + classBlock + '__section-bg'),
-	$bgHelper = $block.find('.' + classBlock + '__bg-helper'),
 	$startBtn = $block.find('.' + classBlock + '__start-btn'),
 	$questions = $block.find('.' + classBlock + '__question'),
 	$result = $block.find('.' + classBlock + '__result'),
@@ -60,16 +58,6 @@ $questions.one('ready.custom.question', function(event, score) {
 	scoreSum += +(score);
 
 	if ($next) {
-		var bgImg = $next.attr('data-img') || '';
-
-		/* Плавная смена изображения в вопросах */
-		if (bgImg && $sectionBg.length && $bgHelper.length) {
-			$bgHelper.fadeIn(delay / 2, function() {
-				$sectionBg.css('background-image', 'url(' + bgImg + ')');
-				$bgHelper.fadeOut(delay / 2);
-			});
-		}
-		/* ===== */
 
 		/* Переключение на след. вопрос */
 		$this.fadeOut(delay / 2, function() {
