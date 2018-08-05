@@ -8,7 +8,7 @@ var
 	$footer = $('.footer'),
 	$startBtn = $block.find('.' + classBlock + '__start-btn'),
 	$questions = $block.find('.' + classBlock + '__question'),
-	$percent = $block.find('.' + classBlock + '__percent'),
+	$scale = $block.find('.' + classBlock + '__scale'),
 	$num = $block.find('.' + classBlock + '__num'),
 	$progressbar = $block.find('.' + classBlock + '__progressbar'),
 	$endTriggerWrap = $block.find('.' + classBlock + '__end-trigger-wrap'),
@@ -103,7 +103,7 @@ $questions.one('ready.custom.question', function(event, score, result) {
 	} else {
 		scoreAvg = Math.round((scoreSum / questionsCount) * 100);
 
-		$percent.attr('data-percent', scoreAvg + '%');
+		setScalePercent($scale, scoreAvg);
 
 		/* Установка класса секции с результатами */
 		if (scoreAvg < 40) {
