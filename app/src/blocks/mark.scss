@@ -8,4 +8,8 @@ $name: mark;
 	&_color_main {
 		background-color: $color-main;
 	}
+
+	&_color_main-transparent {
+		background-color: rgba($color-main, .4);
+	}
 }

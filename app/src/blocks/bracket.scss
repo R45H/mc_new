@@ -5,12 +5,6 @@ $name: bracket;
 	display: inline-block;
 	color: white;
 
-	&__text {
-		display: block;
-		margin: .2em;
-		line-height: .8;
-	}
-
 	&::after {
 		content: '';
 		position: absolute;
@@ -23,6 +17,12 @@ $name: bracket;
 		background-size: contain, contain;
 		background-position: left, right;
 		pointer-events: none;
+	}
+
+	&__text {
+		display: block;
+		margin: .2em;
+		line-height: .8;
 	}
 
 	&_wide {
@@ -44,6 +44,13 @@ $name: bracket;
 			&__text {
 				line-height: 1.7;
 			}
+		}
+	}
+
+	&_color_main {
+
+		&::after {
+			background-image: url($path + 'img/icons/bracket-red-left.svg'), url($path + 'img/icons/bracket-red-right.svg');
 		}
 	}
 }

@@ -21,4 +21,10 @@ $name: info;
 		text-align: left;
 		font-weight: normal;
 	}
+
+	&_fill {
+		border: none;
+		box-shadow: none;
+		background-color: rgba($color-light, .15);
+	}
 }
