@@ -5,6 +5,7 @@ var
 	$sectionTest = $block.find('.' + classBlock + '__section-test'),
 	$sectionWait = $block.find('.' + classBlock + '__section-wait'),
 	$sectionEnd = $block.find('.' + classBlock + '__section-end'),
+	$footer = $('.footer'),
 	$startBtn = $block.find('.' + classBlock + '__start-btn'),
 	$questions = $block.find('.' + classBlock + '__question'),
 	$result = $block.find('.' + classBlock + '__result'),
@@ -46,6 +47,8 @@ $startBtn.one('click', function() {
 	$sectionStart.fadeOut(delay, function() {
 		$sectionTest.fadeIn(delay);
 	});
+
+	$footer.fadeOut(delay);
 });
 /* ===== */
 
@@ -116,6 +119,7 @@ $progressbar.on('complete.progressbar', function() {
 $endTrigger.one('click', function() {
 	$sectionWait.fadeOut(delay, function() {
 		$sectionEnd.fadeIn(delay);
+		$footer.fadeIn(delay);
 	});
 });
 /* ===== */
