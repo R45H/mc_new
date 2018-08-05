@@ -2,6 +2,10 @@ $name: quiz;
 
 .#{$name} {
 
+	&__section-start {
+
+	}
+
 	&__section-test {
 		display: none;
 	}
@@ -12,6 +16,70 @@ $name: quiz;
 
 	&__section-end {
 		display: none;
+
+		&_result_1 {
+
+			.#{$name} {
+				// =====
+
+				&__result {
+
+					&_1 {
+						display: block;
+					}
+				}
+			}
+		}
+
+		&_result_2 {
+
+			.#{$name} {
+				// =====
+
+				&__result {
+
+					&_2 {
+						display: block;
+					}
+				}
+			}
+		}
+
+		&_result_3 {
+
+			.#{$name} {
+				// =====
+
+				&__result {
+
+					&_3 {
+						display: block;
+					}
+				}
+			}
+		}
+
+		&_result_4 {
+
+			.#{$name} {
+				// =====
+
+				&__result {
+
+					&_4 {
+						display: block;
+					}
+				}
+			}
+		}
+	}
+
+	&__result {
+		display: none;
+
+		&_visible {
+			display: block;
+		}
 	}
 
 	&__question {
@@ -25,10 +93,10 @@ $name: quiz;
 		display: none;
 	}
 
-	&__result {
+	&__percent {
 
 		&::after {
-			content: attr(data-result);
+			content: attr(data-percent);
 		}
 	}
 }

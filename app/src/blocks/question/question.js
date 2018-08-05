@@ -33,7 +33,10 @@ $block.each(function() {
 	$btn.on('click', function() {
 		if ($(this).hasClass('btn_disabled')) return;
 
-		$this.trigger('ready.custom.question', [$radio.find('.radio__input_checked').attr('data-score')]);
+		$this.trigger('ready.custom.question', [
+			$radio.find('.radio__input_checked').attr('data-score'),
+			$radio.find('.radio__input_checked').attr('data-result-link')
+		]);
 	});
 	/* ===== */
 });

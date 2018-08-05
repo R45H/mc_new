@@ -8,7 +8,7 @@ var
 	$footer = $('.footer'),
 	$startBtn = $block.find('.' + classBlock + '__start-btn'),
 	$questions = $block.find('.' + classBlock + '__question'),
-	$result = $block.find('.' + classBlock + '__result'),
+	$percent = $block.find('.' + classBlock + '__percent'),
 	$num = $block.find('.' + classBlock + '__num'),
 	$progressbar = $block.find('.' + classBlock + '__progressbar'),
 	$endTriggerWrap = $block.find('.' + classBlock + '__end-trigger-wrap'),
@@ -53,12 +53,17 @@ $startBtn.one('click', function() {
 /* ===== */
 
 /* Нажатие на кнопку "Далее" в вопросах */
-$questions.one('ready.custom.question', function(event, score) {
+$questions.one('ready.custom.question', function(event, score, result) {
 	var
 		$this = $(this),
-		$next = $this.next() && $this.next().hasClass(classBlock + '__question') ? $this.next() : null;
+		$next = $this.next() && $this.next().hasClass(classBlock + '__question') ? $this.next() : null,
+		resultNum;
 
 	scoreSum += +(score);
+
+	if (result) {
+		$('[data-result-target="' + result + '"]').addClass(classBlock + '__result_visible');
+	}
 
 	if ($next) {
 
@@ -92,7 +97,27 @@ $questions.one('ready.custom.question', function(event, score) {
 	} else {
 		scoreAvg = Math.round((scoreSum / questionsCount) * 100);
 
-		$result.attr('data-result', scoreAvg + '%');
+		$percent.attr('data-percent', scoreAvg + '%');
+
+		/* Установка класса секции с результатами */
+		if (scoreAvg < 40) {
+			resultNum = 1;
+		}
+
+		if (scoreAvg >= 40 && scoreAvg < 60) {
+			resultNum = 2;
+		}
+
+		if (scoreAvg >= 60 && scoreAvg < 80) {
+			resultNum = 3;
+		}
+
+		if (scoreAvg >= 80) {
+			resultNum = 4;
+		}
+
+		$sectionEnd.addClass(classBlock + '__section-end_result_' + resultNum);
+		/* ===== */
 
 		$sectionTest.fadeOut(delay, function() {
 			$(this).css('display', '');

@@ -9,5 +9,6 @@ mixin radio(data)
 					id= data.name + '-' + (i + 1)
 					value= val.text
 					data-score= val.score !== undefined ? val.score : null
+					data-result-link= val.result_link !== undefined ? val.result_link : null
 				)
 				label.radio__label(for= data.name + '-' + (i + 1))= val.text
