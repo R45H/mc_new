@@ -3,20 +3,59 @@ $name: scale;
 .#{$name} {
 	width: 100%;
 	padding-top: 36px;
+	height: 7rem;
+	box-sizing: content-box;
 
 	@include screen-sm() {
 		padding-top: 0;
+		height: 500px;
+		max-width: 10rem;
 	}
 
 	&__wrap {
 		width: 100%;
-		height: 7rem;
+		height: 100%;
 		background: $color-darkgray;
 		position: relative;
+		box-sizing: border-box;
 
-		@include screen-sm() {
-			max-width: 10rem;
-			height: 500px;
+		&::before,
+		&::after {
+			position: absolute;
+			white-space: nowrap;
+			color: white;
+			line-height: 2.2;
+			text-align: center;
+			font-size: 1.8rem;
+			transform: translateY(-50%);
+			z-index: 1;
+			top: 50%;
+
+			@include screen-sm() {
+				transform: none;
+				left: 0;
+				width: 100%;
+			}
+		}
+
+		&::before {
+			content: '0%';
+			left: 10px;
+
+			@include screen-sm() {
+				top: auto;
+				right: auto;
+				bottom: 0;
+			}
+		}
+
+		&::after {
+			content: '100%';
+			right: 10px;
+
+			@include screen-sm() {
+				top: 0;
+			}
 		}
 	}
 
@@ -46,6 +85,8 @@ $name: scale;
 		right: 10px;
 		top: 50%;
 		transform: translateY(-50%);
+		background: $color-light;
+		z-index: 2;
 
 		@include screen-sm() {
 			right: auto;
@@ -70,7 +111,7 @@ $name: scale;
 
 		@include screen-sm() {
 			bottom: auto;
-			top: 0;
+			top: -1.9rem;
 			margin-left: 10px;
 			transform: rotate(-10deg);
 			transform-origin: left top;
@@ -96,6 +137,34 @@ $name: scale;
 
 			@include screen-sm() {
 				display: none;
+			}
+		}
+	}
+
+	&_disable_min {
+
+		.#{$name} {
+			// =====
+
+			&__wrap {
+
+				&::before {
+					display: none;
+				}
+			}
+		}
+	}
+
+	&_disable_max {
+
+		.#{$name} {
+			// =====
+
+			&__wrap {
+
+				&::after {
+					display: none;
+				}
 			}
 		}
 	}

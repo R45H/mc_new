@@ -94,6 +94,9 @@ $name: quiz;
 	}
 
 	&__scale {
-		height: 100%;
+
+		@include screen-sm() {
+			height: 100%;
+		}
 	}
 }

@@ -173,5 +173,13 @@ function setScalePercent($target, val) {
 	});
 
 	$num.text(val + '%');
+
+	if (val < 25) {
+		$target.addClass('scale_disable_min');
+	}
+
+	if (val > 85) {
+		$target.addClass('scale_disable_max');
+	}
 }
 /* ===== */

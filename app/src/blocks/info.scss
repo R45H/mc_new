@@ -27,4 +27,10 @@ $name: info;
 		box-shadow: none;
 		background-color: rgba($color-light, .15);
 	}
+
+	&_fill-bold {
+		border: none;
+		box-shadow: none;
+		background-color: rgba($color-light, .4);
+	}
 }
