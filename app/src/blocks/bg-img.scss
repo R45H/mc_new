@@ -5,4 +5,8 @@ $name: bg-img;
 	width: 100%;
 	padding-bottom: 56.25%;
 	background: no-repeat center / cover;
+
+	&_pos_bottom {
+		background-position: bottom;
+	}
 }

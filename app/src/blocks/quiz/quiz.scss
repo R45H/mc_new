@@ -3,7 +3,7 @@ $name: quiz;
 .#{$name} {
 
 	&__section-start {
-
+		display: none;
 	}
 
 	&__section-test {
@@ -15,7 +15,6 @@ $name: quiz;
 	}
 
 	&__section-end {
-		display: none;
 
 		&_result_1 {
 

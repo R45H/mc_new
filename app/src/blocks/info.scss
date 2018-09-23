@@ -22,6 +22,11 @@ $name: info;
 		font-weight: normal;
 	}
 
+	&_strong-shadow {
+		@extend .#{$name}_strong;
+		box-shadow: 0 1.3rem 0 rgba($color-light, .2);
+	}
+
 	&_fill {
 		border: none;
 		box-shadow: none;
@@ -32,5 +37,9 @@ $name: info;
 		border: none;
 		box-shadow: none;
 		background-color: rgba($color-light, .4);
+	}
+
+	&_padding_lg {
+		padding: 2rem 3rem;
 	}
 }
