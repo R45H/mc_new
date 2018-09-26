@@ -64,10 +64,15 @@ $questions.one('ready.custom.question', function(event, score, result) {
 
 	/* Отображение результата если попали на нужный ответ */
 	if (result) {
-		$('[data-result-target="' + result + '"]')
-			.addClass(classBlock + '__result_visible')
-			.find('.' + classBlock + '__problem-title')
-			.text('Проблема ' + ++problemsCount + ':');
+		var
+			$currentTarget = $('[data-result-target="' + result + '"]'), // Текущий блок для показа
+			$currentProblemTitle = $currentTarget.find('.' + classBlock + '__problem-title'); // Заголовок текущей проблемы
+
+		$currentTarget.addClass(classBlock + '__result_visible');
+
+		if ($currentProblemTitle.length) {
+			$currentProblemTitle.text('Проблема ' + ++problemsCount + ':');
+		}
 	}
 	/* ===== */
 
@@ -123,6 +128,10 @@ $questions.one('ready.custom.question', function(event, score, result) {
 		}
 
 		$sectionEnd.addClass(classBlock + '__section-end_result_' + resultNum);
+
+		if (scoreAvg < 80 && !problemsCount) {
+			$sectionEnd.addClass(classBlock + '__section-end_problems_none');
+		}
 		/* ===== */
 
 		$sectionTest.fadeOut(delay, function() {

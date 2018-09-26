@@ -3,7 +3,7 @@ $name: quiz;
 .#{$name} {
 
 	&__section-start {
-		display: none;
+
 	}
 
 	&__section-test {
@@ -15,6 +15,7 @@ $name: quiz;
 	}
 
 	&__section-end {
+		display: none;
 
 		&_result_1 {
 
@@ -71,6 +72,21 @@ $name: quiz;
 				}
 			}
 		}
+
+		&_problems_none {
+
+			.#{$name} {
+				// =====
+
+				&__has-problems-visible {
+					display: none;
+				}
+
+				&__has-problems-hidden {
+					display: block;
+				}
+			}
+		}
 	}
 
 	&__result {
@@ -79,6 +95,14 @@ $name: quiz;
 		&_visible {
 			display: block;
 		}
+	}
+
+	&__has-problems-visible {
+		display: block;
+	}
+
+	&__has-problems-hidden {
+		display: none;
 	}
 
 	&__question {
