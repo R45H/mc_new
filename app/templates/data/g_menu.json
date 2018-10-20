@@ -15,6 +15,10 @@
 		{
 			"link": "about.html",
 			"name": "Обо мне"
+		},
+		{
+			"link": "quiz.html",
+			"name": "Тест"
 		}
 	]
 }

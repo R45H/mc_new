@@ -158,8 +158,10 @@ $progressbar.on('complete.progressbar', function() {
 /* Появление секции с результатами при клике на кнопку */
 $endTrigger.one('click', function() {
 	$sectionWait.fadeOut(delay, function() {
-		$sectionEnd.fadeIn(delay);
 		$footer.fadeIn(delay);
+		$sectionEnd.fadeIn(delay, function() {
+			$('.review__wrap').trigger('visibility.review');
+		});
 	});
 });
 /* ===== */
