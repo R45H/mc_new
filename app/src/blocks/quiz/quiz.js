@@ -6,6 +6,7 @@ var
 	$sectionWait = $block.find('.' + classBlock + '__section-wait'),
 	$sectionEnd = $block.find('.' + classBlock + '__section-end'),
 	$footer = $('.footer'),
+	$header = $('.header'),
 	$startBtn = $block.find('.' + classBlock + '__start-btn'),
 	$questions = $block.find('.' + classBlock + '__question'),
 	$scale = $block.find('.' + classBlock + '__scale'),
@@ -50,6 +51,7 @@ $startBtn.one('click', function() {
 	});
 
 	$footer.fadeOut(delay);
+	$header.fadeOut(delay);
 });
 /* ===== */
 
@@ -159,6 +161,7 @@ $progressbar.on('complete.progressbar', function() {
 $endTrigger.one('click', function() {
 	$sectionWait.fadeOut(delay, function() {
 		$footer.fadeIn(delay);
+		$header.fadeIn(delay);
 		$sectionEnd.fadeIn(delay, function() {
 			$('.review__wrap').trigger('visibility.review');
 		});

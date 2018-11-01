@@ -13,10 +13,12 @@ $point-sm: 576px;
 $point-md: 768px;
 $point-lg: 992px;
 $point-xl: 1200px;
+$point-xxl: 1400px;
 $point-sm-max: $point-sm - 1;
 $point-md-max: $point-md - 1;
 $point-lg-max: $point-lg - 1;
 $point-xl-max: $point-xl - 1;
+$point-xxl-max: $point-xl - 1;
 
 $font-main: 'Geometria', sans-serif;
 $font-second: 'Akrobat', sans-serif;
@@ -68,6 +70,13 @@ $height-header: 14rem;
 @mixin screen-xl($direct: 'min') {
 
 	@media (if($direct == 'max', 'max-width: #{$point-xl-max}', 'min-width: #{$point-xl}')) {
+		@content;
+	}
+}
+
+@mixin screen-xxl($direct: 'min') {
+
+	@media (if($direct == 'max', 'max-width: #{$point-xxl-max}', 'min-width: #{$point-xxl}')) {
 		@content;
 	}
 }
