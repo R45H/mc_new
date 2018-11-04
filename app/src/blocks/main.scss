@@ -2,6 +2,8 @@ $name: main;
 
 .#{$name} {
 	flex: 1 0 auto;
+	display: flex;
+	flex-direction: column;
 
 	&__separator {
 		margin-bottom: 30px;

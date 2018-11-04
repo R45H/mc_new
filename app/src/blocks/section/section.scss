@@ -4,6 +4,7 @@ $name: section;
 	padding: 4rem 0;
 	background: no-repeat center / cover;
 	position: relative;
+	width: 100%;
 
 	&__bottom {
 		position: absolute;
@@ -175,6 +176,10 @@ $name: section;
 
 	&_full {
 		min-height: 100vh;
+	}
+
+	&_grow {
+		flex-grow: 1;
 	}
 
 	&_up {
