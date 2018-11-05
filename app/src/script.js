@@ -36,6 +36,9 @@ $(function() {
 		//=require 'blocks/video-inner/video-inner.js'
 	}());
 	(function() {
+		//=require 'blocks/audio-inner/audio-inner.js'
+	}());
+	(function() {
 		//=require 'blocks/question/question.js'
 	}());
 	(function() {

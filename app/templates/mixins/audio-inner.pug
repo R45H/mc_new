@@ -1,0 +1,9 @@
+mixin audio-inner(link, type)
+	.audio-inner
+		audio.audio-inner__item(
+			width='100%'
+		)
+			source(
+				src= link
+				type= type || 'audio/mpeg'
+			)
