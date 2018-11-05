@@ -47,6 +47,9 @@ $(function() {
 	(function() {
 		//=require 'blocks/progressbar/progressbar.js'
 	}());
+	(function() {
+		//=require 'blocks/footer/footer.js'
+	}());
 	/* Blocks will be inserted here */
 });
 
