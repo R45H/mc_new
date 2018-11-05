@@ -12,4 +12,14 @@ $name: mark;
 	&_color_main-transparent {
 		background-color: rgba($color-main, .4);
 	}
+
+	&_wide {
+		display: block;
+	}
+
+	&_space {
+		display: inline-block;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
 }

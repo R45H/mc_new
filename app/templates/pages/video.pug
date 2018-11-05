@@ -1,0 +1,48 @@
+include ../mixins/video-inner
+include ../mixins/audio-inner
+
+.section.section_up.section_space_none.section_grow.section_fog_light(style='background-image: url(img/content/section/02.jpg);')
+	.main__space-top.main__space-bot-2x
+
+		.container
+			.text-center
+				.title.title_sm.main__space-bot
+					span.red Закрытый
+					|
+					| видео-раздел
+					br
+					| проекта «#{global.name}»
+
+				.main__space-bot
+					.bracket.bracket_color_main.bracket_wide.bracket_tall
+						.bracket__text
+							.title.title_tight.title_lower Видео 1
+
+		h1.title.title_lg.title_tight.main__space-bot.text-center
+			span.mark.mark_wide.mark_color_main
+				.container Фундаментальное заблуждение парней о девушках
+
+		.container
+
+			.text.main__space-bot
+				p
+					b Тут ты узнаешь:
+				ul
+					li Почему у тебя по прежнему есть страх подхода
+					li Почему на самом деле мы боимся отказов
+					li Что нам мешает развиваться в знакомствах
+					li КОНКРЕТНЫЕ способы решения этих проблем
+
+			.row.justify-content-center.main__space-bot
+				.col-md-10.col-lg-8
+					.video(data-id="yA3x5zE-R_Y")
+					//-+video-inner('video.mp4')
+					//-+audio-inner('audio.mp3')
+
+			.text-center
+				p= 'Если у тебя возникли проблемы с видео, обязательно напиши мне на мой E-mail - '
+					a(href='mailto:artur.vozniak@mail.ru') artur.vozniak@mail.ru
+					|
+					| или напиши в "
+					a(href='https://vk.com/artur_vozniak' target='_blank') ВКонтакте
+					| " (В теме письма укажи "проблемы с видео")
