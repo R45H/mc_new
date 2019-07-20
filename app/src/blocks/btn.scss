@@ -33,6 +33,11 @@ $name: btn;
 		padding-right: 2.6em;
 	}
 
+	&_full {
+		width: 100%;
+		display: block;
+	}
+
 	&_sm {
 		padding-top: .65em;
 		padding-bottom: .65em;
@@ -47,5 +52,10 @@ $name: btn;
 		&:active {
 			background-color: $color-darkgray;
 		}
+	}
+
+	&_bordered {
+		box-shadow: none;
+		border: 2px solid white;
 	}
 }

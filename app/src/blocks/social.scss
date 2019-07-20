@@ -70,4 +70,54 @@ $name: social;
 	&__icon {
 
 	}
+
+	&_color_white {
+
+		.#{$name} {
+			// =====
+
+			&__link {
+				color: white;
+
+				&:hover {
+					color: $color-light;
+				}
+
+				&_vk {
+
+					&:hover {
+						color: $color-vk;
+					}
+				}
+
+				&_youtube {
+
+					&:hover {
+						color: $color-yt;
+					}
+				}
+
+				&_instagram {
+
+					&:hover {
+						color: $color-insta;
+					}
+				}
+			}
+		}
+	}
+
+	&_separate_none {
+
+		.#{$name} {
+			// =====
+
+			&__link {
+
+				&::after {
+					display: none;
+				}
+			}
+		}
+	}
 }

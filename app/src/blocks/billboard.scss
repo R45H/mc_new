@@ -1,0 +1,42 @@
+$name: billboard;
+$icon-size: 5rem;
+$border-size: 5px;
+
+.#{$name} {
+	padding-top: $icon-size / 3;
+
+	&__wrap {
+		padding: 5rem;
+		border: $border-size solid $color-light;
+		border-top: none;
+		position: relative;
+
+		&::before,
+		&::after {
+			content: '';
+			position: absolute;
+			top: 0;
+			background-color: $color-light;
+			width: calc((50% - #{$icon-size} / 2) - #{$border-size});
+			height: $border-size;
+		}
+
+		&::before {
+			left: 0;
+		}
+
+		&::after {
+			right: 0;
+		}
+	}
+
+	&__icon {
+		fill: $color-light;
+		position: absolute;
+		width: $icon-size;
+		height: $icon-size;
+		top: -$icon-size / 3;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}

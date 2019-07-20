@@ -1,0 +1,160 @@
+include ../components/review
+include ../mixins/svg
+
+.section.section_up.section_full.section_valign_center.section_space-top_header-2x.section_space-bot_2x.section_fog_dark.section_gradient_darkblue(style='background-image: url(img/content/section/01.jpg); background-position: 75% 0;')
+	.container.text-center.z-index-1
+		h1.title.title_color_white.main__space-bot
+			span.mark.mark_color_light.mark_space_lg Сыграй в игру и получи девушку в подарок
+
+		h2.title.title_color_white.main__space-bot-2x
+			span.mark.mark_border_light.mark_space_lg Абсолютно бесплатно
+
+		.arrow.main__space-bot-2x
+
+		a.btn.btn_wide(href='#' data-modal='modal3') Присоединиться
+
+	.section__next
+
+.section.section_fog_light.section_space-top_2x(style='background-image: url(img/content/section/02.jpg);')
+	.container
+		.main__space-bot-2x.text-center
+			h2.title.main__space-bot-half Что уникального ты узнаешь в игре
+			h3.title.title_xs.title_lower Об этом не знают даже эксперты соблазнения
+
+		.row
+			each val in content_1
+				.col-md-6.main__space-bot
+					.main__flex-wrap
+
+						.main__flex-item
+							+svg(val.icon, 'main__icon-full main__icon-color-gray')
+
+						div
+							h3.title.title_sm.title_tight.title_color_main.title_lower.main__space-bot-half= val.title
+							p= val.text
+
+.section.section_color_main.section_space_none
+	.dots-sm.section__dots
+
+	.container
+		.row.justify-content-center.text-center
+			.col-md-10.col-lg-8.main__space-2x-inner.section__color_main
+				.title.title_color_white
+					span.mark Посмотри это видео и ты поймешь, почему Игра приносит такие невероятные результаты участникам
+
+	.section__next.section__next_gray.section__next_left
+
+.section.section_space_2x.section_color_gray
+	.container
+		.row.justify-content-center
+			.col-md-10.col-lg-8
+				.video(data-id="yA3x5zE-R_Y")
+
+.section.section_space-top_2x.section_fog_darker(style='background-image: url(img/content/section/04.jpg);')
+	.container
+		.text-center
+			h2.title.title_sm.title_color_white.main__space-bot
+				span.mark= 'Сразу говорю - игра не для всех!'
+
+			.arrow.main__space-bot
+
+		.row
+
+			.col-md-5.order-md-1.main__space-bot
+
+				.billboard.text-center.main__space-bot-half
+					.billboard__wrap
+						+svg('diamond', 'billboard__icon')
+						.title.title_color_white Уже более
+						.title.title_color_white.title_tight.title_xxl 5000
+						.title.title_color_white парней в игре
+
+				a.btn.btn_full(href='#' data-modal='modal3') Успей присоединиться!
+
+			.col-md-7.main__space-bot.center-md-max
+				.title.title_lower.title_color_white.title_sm= 'Это НЕ пикап и НЕ соблазнение. Тупое быдло и прочий мусор, который не привык работать головой не смогут даже ее понять! Если ты не такой, то '
+					span.mark следуй за мной
+					|
+					| и узнаешь почему те кто сыграл в мою игру почти всегда встреча-ются только с самыми красивыми девушками. И почему твое окружение делает все чтобы ты никогда не узнал этих секретов...
+
+.section.section_space_2x.section_color_dark
+	.container.text-center
+		.row.justify-content-center
+			.col-md-10.col-lg-8
+				.title.main__space-bot
+					span.mark У нас есть то, чего нет у других!
+				.title.title_sm.title_lower.title_color_white Никакого пустого трепа, только парни, которым Игра помогла найти классных девушек и построить с ними крепкие отношения:
+
+.section.section_space_none
+	+review(review)
+
+	.section__next.section__next_center
+
+.section.section_space-top_2x.section_fog_darker(style='background-image: url(img/content/section/04.jpg);')
+	.container
+		.row.justify-content-center.text-center
+			.col-md-6.col-lg-5
+				h2.title.title_sm.title_color_white.main__space-bot-2x
+					span.mark Ты до сих пор думаешь, что игра не решит твои уникальные проблемы?
+
+		.row.justify-content-center
+			.col-md-9.col-lg-8
+				.title.title_lower.title_color_white.title_xs.main__space-bot= 'Я не буду говорить, что Игра помогла уже более '
+					span.mark.mark_color_main 4000 парней
+					|
+					| не только научиться притягивать классных и сексуальных девушек не прилагая никаких усилий, но и создать крепкие отношения, в которых девушки без ума от своих парней.
+				.title.title_lower.title_color_white.title_xs.main__space-bot Ведь каждый из нас ошибочно думает, что его проблемы уникальны. И наверняка у тебя уже были попытки решить эти проблемы и, воз-можно, не раз.
+				.title.title_lower.title_color_white.title_xs.main__space-bot= 'Но я хочу тебя успокоить, в какой бы ситуации ты сейчас не находился, '
+					span.mark.mark_color_main игра с легкостью решит твои проблемы
+					| ! Потому что здесь, в отличии от остальных, мы не пытаемся решить проблемы поверх-ностно, что лишь временно дает облегчение, здесь мы разбираем проблемы на самом глубоком уровне, что помогает нам с точностью снайперской винтовки бить прямо в корень проблемы, что сильно эко-номит нам время. Ведь нам больше не приходится зря тратить свое время на решения поверхностных проявлений наших внутренних проблем.
+				.title.title_lower.title_color_white.title_xs.main__space-bot И конечно же нестандартный формат Игры, благодаря которому, ты начнешь получать результаты уже после первого упражнения! Но это далеко не все что кардинально отличает Игру от всего что ты слышал до этого, но для того чтобы это понять только начав Игру!
+
+.section.section_fog_light.section_space_4x(style='background-image: url(img/content/section/02.jpg);')
+	.container
+		.row.justify-content-center.align-items-center
+			.col-md-5.col-lg-6.col-xl-5.main__space-bot.text-right.center-md-max
+				.title Присоединись к редкому числу парней, которых по праву считают
+
+			.col-md-7.col-lg-6.col-xl-5.main__space-bot.text-center
+				.title.title_lg.title_color_main
+					.mark.mark_border_main.mark_space_xl.mark_wide исключениями из всех правил
+
+.section.section_color_main.section_space_2x
+	.container.text-center
+		a.btn.btn_wide.btn_bordered(href='#' data-modal='modal3') Вписаться в игру
+
+.section.section_space-top_2x.section_fog_darker.section_bg_4(style='background-image: url(img/content/section/05.jpg);')
+	.container
+		.row.justify-content-center
+			.col-sm-6.col-md-5.col-lg-4.text-center
+				.title.title_xs.title_color_light.main__space-bot-half Артур Возняк
+				h2.title.title_lg.title_color_white.main__space-bot.center-md-max
+					span.mark Ты обо мне не слышал?
+				.arrow.main__space-bot
+
+		.row
+			.col-md-8
+				.title.title_xs.title_color_white.title_lower.main__space-bot Как это могло случиться...
+					br
+					| Странно...
+				.title.title_xs.title_color_white.title_lower.main__space-bot Ладно, давай познакомимся, меня зовут Артур Возняк и я самый заурядный парень, которого ты мог только встретить. У меня нет ничего, что выделяло бы меня на фоне других: ни внешности, ни денег, ни харизмы...
+					br
+					| Если бы ты увидел меня на улице, то навряд ли вообще обратил на меня внимание. Единственное что у меня есть - это всего одна суперспособность...
+					br
+					| Суперспособность нравиться самым красивым девушкам, ничего при этом не делая. Все, на этом список моих достижений закончен...
+				.title.title_xs.title_color_white.title_lower.main__space-bot Я скучный, неинтересный, не идеально знакомлюсь, но как ни странно я все равно нравлюсь девушкам больше, чем мажоры на крутых тачках и накачанных красавцев. И нет, это суперспособность не досталась мне от рождения, она у меня появилась от тех секретов, которые мне повезло узнать. И только потому что многие парни просили меня рассказать их я и создал эту игру. И оказалось, что я лох...
+				.title.title_xs.title_color_white.title_lower.main__space-bot Потому что те парни, которые узнали эти секреты, начали получать в разы лучше результаты чем я, хотя до этого многие из них ни разу не встречались с девушками.
+				.title.title_xs.title_color_white.title_lower.main__space-bot Об этом я и рассказываю в Игре.
+					br
+					| И если ты хочешь узнать эти секреты, то попробуй, но сразу предупреждаю, они не достанутся тебе легко!
+
+.section.section_space_2x.section_color_dark
+	.container
+
+		.section__clouds
+
+	.container.text-center
+		h2.title.title_color_white.main__space-bot
+			span.mark= 'Узнай на что ты способен'
+
+		a.btn.btn_wide(href='#' data-modal='modal3') Начать игру

@@ -126,4 +126,23 @@ $name: main;
 		width: 10rem;
 		height: 10rem;
 	}
+
+	&__icon-full {
+		width: 100%;
+		height: 5rem;
+	}
+
+	&__icon-color-gray {
+		fill: darken($color-darkgray, 10%);
+	}
+
+	&__flex-wrap {
+		display: flex;
+	}
+
+	&__flex-item {
+		flex: none;
+		width: 7rem;
+		padding-right: 2rem;
+	}
 }

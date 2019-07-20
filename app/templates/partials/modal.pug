@@ -51,3 +51,33 @@ include ../components/social
 				+social(social_2)
 
 		button.modal__close(data-modal-close)
+
+#modal3.modal
+	.modal__wrap
+
+		.modal__head
+			.row.justify-content-center
+				.col-sm-8
+					h2.title Пришло время стать исключением из правил
+			button.modal__close(data-modal-close)
+
+		.modal__body
+			.row.justify-content-center
+				.col-sm-10
+					.title.title_xs.title_lower.main__space-bot Введи свое имя и e-mail и ты узнаешь как мы притягиваем самых красивых девушек, нарушая все правила!
+
+				.col-sm-8.col-md-6
+					.main__space-bot
+						+input({
+							title: 'Имя'
+						})
+					.main__space-bot
+						+input({
+							title: 'E-mail',
+							type: 'email'
+						})
+					.main__space-bot
+						input.btn.btn_wide(type='submit' value='Получить')
+
+				.col-12
+					.modal__info Никакого спама! Если тебе что-то не понравится, ты сможешь отписаться в любой момент.

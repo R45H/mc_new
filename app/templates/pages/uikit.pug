@@ -8,6 +8,7 @@ include ../mixins/question
 include ../mixins/num
 include ../mixins/progressbar
 include ../mixins/bg-img
+include ../mixins/svg
 include ../components/logo
 include ../components/social
 include ../components/quote
@@ -89,6 +90,9 @@ include ../components/scale
 		.col-sm-1.main__space-col.main__black
 			.mark .mark
 
+		.col-sm-4.main__space-col.main__black
+			.mark.mark_color_light .mark.mark_color_light
+
 		.col-sm-3.main__space-col
 			.mark.mark_color_main .mark.mark_color_main
 
@@ -96,10 +100,22 @@ include ../components/scale
 			.mark.mark_color_main-transparent .mark.mark_color_main-transparent
 
 		.col-sm-4.main__space-col.main__black
+			.mark.mark_border_main .mark.mark_border_main
+
+		.col-sm-4.main__space-col.main__black
+			.mark.mark_border_light .mark.mark_border_light
+
+		.col-sm-4.main__space-col.main__black
 			.mark.mark_wide .mark.mark_wide
 
 		.col-sm-4.main__space-col.main__black
 			.mark.mark_space .mark.mark_space
+
+		.col-sm-4.main__space-col.main__black
+			.mark.mark_space_lg .mark.mark_space_lg
+
+		.col-sm-4.main__space-col.main__black
+			.mark.mark_space_xl .mark.mark_space_xl
 
 	.row.main__separator
 
@@ -142,6 +158,12 @@ include ../components/scale
 		.col-sm-3.main__space-col
 			.btn.btn_disabled .btn.btn_disabled
 
+		.col-sm-3.main__space-col.main__black
+			.btn.btn_bordered .btn.btn_bordered
+
+		.col-sm-6.main__space-col
+			.btn.btn_full .btn.btn_full
+
 	.row.main__separator
 
 		.col-sm-3
@@ -163,8 +185,14 @@ include ../components/scale
 
 	.row.main__separator
 
-		.col-sm-6
+		.col-sm-4
 			+social(social)
+
+		.col-sm-4
+			+social(social)(class='social_separate_none')
+
+		.col-sm-4.main__black
+			+social(social)(class='social_color_white')
 
 	.row.main__separator
 
@@ -312,3 +340,12 @@ include ../components/scale
 				text: 'Ты тут',
 				percent: 40
 			})
+
+	.row.main__separator
+		.col-sm-5.main__black
+			.billboard.text-center
+				.billboard__wrap
+					+svg('diamond', 'billboard__icon')
+					.title.title_color_white Уже более
+					.title.title_color_white.title_tight.title_xxl 5000
+					.title.title_color_white парней в игре

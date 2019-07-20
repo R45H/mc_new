@@ -5,6 +5,10 @@ $name: mark;
 	color: white;
 	background-color: rgba(255, 255, 255, .25);
 
+	&_color_light {
+		background-color: rgba(255, 255, 255, .15);
+	}
+
 	&_color_main {
 		background-color: $color-main;
 	}
@@ -13,13 +17,34 @@ $name: mark;
 		background-color: rgba($color-main, .4);
 	}
 
-	&_wide {
-		display: block;
+	&_border_main {
+		background-color: transparent;
+		color: $color-main;
+		border: 2px solid $color-main;
+	}
+
+	&_border_light {
+		background-color: transparent;
+		border: 2px solid rgba(255, 255, 255, .15);
 	}
 
 	&_space {
 		display: inline-block;
 		padding-left: 15px;
 		padding-right: 15px;
+	}
+
+	&_space_lg {
+		display: inline-block;
+		padding: 5px 15px;
+	}
+
+	&_space_xl {
+		display: inline-block;
+		padding: 15px;
+	}
+
+	&_wide {
+		display: block;
 	}
 }

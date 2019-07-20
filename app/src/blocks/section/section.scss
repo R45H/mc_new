@@ -94,6 +94,21 @@ $name: section;
 				color: darken($color-main, 10%);
 			}
 		}
+
+		&_gray {
+			background: $color-gray;
+			color: $color-main;
+
+			&:hover {
+				background: $color-gray;
+				color: lighten($color-main, 10%);
+			}
+
+			&:active {
+				background: $color-gray;
+				color: darken($color-main, 10%);
+			}
+		}
 	}
 
 	&__hand {
@@ -174,6 +189,17 @@ $name: section;
 		}
 	}
 
+	&__dots {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		left: 0;
+	}
+
+	&__color_main {
+		background: $color-main;
+	}
+
 	&_full {
 		min-height: 100vh;
 	}
@@ -230,6 +256,12 @@ $name: section;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
+	}
+
+	&_valign_bottom {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
 	}
 
 	&_space_header-2x {
@@ -295,6 +327,19 @@ $name: section;
 			left: 0;
 			width: 100%;
 			height: 100%;
+		}
+	}
+
+	&_gradient_darkblue {
+
+		&::after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: linear-gradient(to bottom right, $color-gradient, transparent);
 		}
 	}
 
@@ -365,6 +410,14 @@ $name: section;
 
 		@include screen-md() {
 			background-position: 75% 30%;
+		}
+	}
+
+	&_bg_4 {
+		background-position: left;
+
+		@include screen-md() {
+			background-position: 50% 0;
 		}
 	}
 }

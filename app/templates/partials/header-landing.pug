@@ -1,0 +1,14 @@
+include ../components/logo
+include ../components/toggle
+include ../components/social
+
+// HEADER
+header.header
+	.header__wrap
+		.header__row
+
+			.header__col.header__col_fixed
+				+logo(class='header__logo' img='/img/logo-landing.svg' noLink=true noTitle=true)
+
+			.header__col.header__col_flex
+				+social(social)(class='social_color_white social_separate_none')
